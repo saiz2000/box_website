@@ -1,0 +1,66 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%);
+    ;
+    nav{
+        div{
+            a{
+                #main-icono {
+                    width: 72px;
+                    height: 72px;
+                    text-align: center;
+                }
+                text-decoration: none;
+                color: aliceblue;
+                /*img{
+                width: 20px;
+                height: 20px;
+                }*/
+                &:hover{
+                    color:#1f1d1d;
+                }
+            }
+            button{
+                span{
+                    
+                }
+            }
+            div{
+                ul{
+                    /*list-style: none;*/
+                    display: flex;
+                    margin: 31px;
+                    li{
+                        a{
+                            color: aliceblue;
+                            margin: 11px;
+                            padding: 1px;
+                            border-radius: 4px;
+                            font-size: medium
+                        }
+                    }
+                    li{
+                        a{
+                            
+                        }
+                        ul{
+                            li{
+                                a{
+                                    
+                                }
+                            }
+                            li{
+                                a{
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }        
+    }
+}
