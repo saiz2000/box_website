@@ -1,0 +1,659 @@
+/*---------------VARIABLES---------------*/
+/*-----listas ejemplo------------*/
+/*$font-size:
+
+50px    1
+30px    2
+20px    3
+10px    4
+
+h1{
+    font-size: nth($font-size, 3)
+}*/
+/* $ancho:720px;
+
+img{
+    width: $ancho / 2 +10;
+}*/
+/*$button:(
+    --key - value (valor) 
+    fondo-boton:black 
+    bordes-boton:2px solid tomato
+    color-texto:white
+);
+
+.boton{
+    background-color: map-get($map: , $key: );
+    border: map-get($button, bordes-boton);
+    color: map-get($button, color-texto);
+}*/
+/*%flex{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}*/
+/*ejemplo .contenedor{
+    @include flex (flex,space-around, center);
+}
+
+//!condicionales
+
+/*@mixin modos ($darkmode){
+    @if $darkmode == black {
+        border:solid 2px tomato
+    }@else{
+        border:solid 2px aqua
+    }
+}*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Quicksand', sans-serif; }
+
+h2 {
+  color: aliceblue; }
+
+.servicios {
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #790909 35%, red 100%); }
+
+.quienes_somos {
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #790909 35%, red 100%); }
+
+.cotizacion {
+  color: aliceblue; }
+
+.clientes {
+  color: aliceblue; }
+
+.main p {
+  color: aliceblue; }
+
+.main2 p {
+  color: aliceblue; }
+
+span {
+  color: #2b2727; }
+
+/*----------CONTATCTANOS FORMULARIO ARREGLO-----*/
+#contactanos {
+  margin-top: 0px; }
+
+/*----------COTIZACION FORMULARIO ARREGLO-----*/
+#cotizacion {
+  margin-top: 0px; }
+
+/*---------------VARIABLES---------------*/
+/*-----listas ejemplo------------*/
+/*$font-size:
+
+50px    1
+30px    2
+20px    3
+10px    4
+
+h1{
+    font-size: nth($font-size, 3)
+}*/
+/* $ancho:720px;
+
+img{
+    width: $ancho / 2 +10;
+}*/
+/*$button:(
+    --key - value (valor) 
+    fondo-boton:black 
+    bordes-boton:2px solid tomato
+    color-texto:white
+);
+
+.boton{
+    background-color: map-get($map: , $key: );
+    border: map-get($button, bordes-boton);
+    color: map-get($button, color-texto);
+}*/
+/*%flex{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}*/
+/*ejemplo .contenedor{
+    @include flex (flex,space-around, center);
+}
+
+//!condicionales
+
+/*@mixin modos ($darkmode){
+    @if $darkmode == black {
+        border:solid 2px tomato
+    }@else{
+        border:solid 2px aqua
+    }
+}*/
+/*---------------VARIABLES---------------*/
+/*-----listas ejemplo------------*/
+/*$font-size:
+
+50px    1
+30px    2
+20px    3
+10px    4
+
+h1{
+    font-size: nth($font-size, 3)
+}*/
+/* $ancho:720px;
+
+img{
+    width: $ancho / 2 +10;
+}*/
+/*$button:(
+    --key - value (valor) 
+    fondo-boton:black 
+    bordes-boton:2px solid tomato
+    color-texto:white
+);
+
+.boton{
+    background-color: map-get($map: , $key: );
+    border: map-get($button, bordes-boton);
+    color: map-get($button, color-texto);
+}*/
+/*%flex{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}*/
+/*ejemplo .contenedor{
+    @include flex (flex,space-around, center);
+}
+
+//!condicionales
+
+/*@mixin modos ($darkmode){
+    @if $darkmode == black {
+        border:solid 2px tomato
+    }@else{
+        border:solid 2px aqua
+    }
+}*/
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #790909 35%, red 100%); }
+  header nav div a {
+    text-decoration: none;
+    color: aliceblue;
+    /*img{
+                width: 20px;
+                height: 20px;
+                }*/ }
+    header nav div a #main-icono {
+      width: 72px;
+      height: 72px;
+      text-align: center; }
+    header nav div a:hover {
+      color: #1f1d1d;
+      font-size: large; }
+  header nav div div ul {
+    /*list-style: none;*/
+    display: flex;
+    margin: 31px; }
+    header nav div div ul li a {
+      color: aliceblue;
+      margin: 11px;
+      padding: 1px;
+      border-radius: 4px;
+      font-size: medium; }
+    header nav div div ul li ul .dropdown-menu {
+      background: #020024;
+      background: linear-gradient(90deg, #020024 0%, #790909 35%, red 100%); }
+    header nav div div ul li ul li a .dorpdown__cutomize {
+      display: flex; }
+
+/*---------------VARIABLES---------------*/
+/*-----listas ejemplo------------*/
+/*$font-size:
+
+50px    1
+30px    2
+20px    3
+10px    4
+
+h1{
+    font-size: nth($font-size, 3)
+}*/
+/* $ancho:720px;
+
+img{
+    width: $ancho / 2 +10;
+}*/
+/*$button:(
+    --key - value (valor) 
+    fondo-boton:black 
+    bordes-boton:2px solid tomato
+    color-texto:white
+);
+
+.boton{
+    background-color: map-get($map: , $key: );
+    border: map-get($button, bordes-boton);
+    color: map-get($button, color-texto);
+}*/
+/*%flex{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}*/
+/*ejemplo .contenedor{
+    @include flex (flex,space-around, center);
+}
+
+//!condicionales
+
+/*@mixin modos ($darkmode){
+    @if $darkmode == black {
+        border:solid 2px tomato
+    }@else{
+        border:solid 2px aqua
+    }
+}*/
+/*----------INDEX-------------------main------------------*/
+main {
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #790909 35%, red 100%); }
+  main .main {
+    background-image: url(../img/fondo-provisional.jpg);
+    width: 100%;
+    height: 87vh;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    justify-content: center; }
+    main .main div {
+      margin: 82px; }
+      main .main div h2 {
+        font-size: 60px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        border: solid aliceblue;
+        padding: 10px;
+        border-radius: 6px;
+        font-family: 'Quicksand', sans-serif; }
+      main .main div p {
+        margin: 17px;
+        font-size: 25px;
+        font-weight: 465; }
+      main .main div a {
+        color: aliceblue;
+        font-size: x-large;
+        text-decoration: none;
+        background: rgba(2, 0, 36, 0.308);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 0.315) 0%, #790909 35%, rgba(255, 0, 0, 0.397) 100%);
+        padding: 4px;
+        margin: 20px;
+        border-radius: 10px;
+        font-family: 'Quicksand', sans-serif; }
+
+/*----------INDEX-------------------main2------------------*/
+.main2 {
+  display: flex;
+  align-items: center;
+  margin: 41px 120px 41px 120px;
+  border-radius: 10px; }
+  .main2 div img {
+    display: flex;
+    width: 460px;
+    height: 460px;
+    padding: 0%;
+    border-radius: 10px;
+    -webkit-box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75); }
+  .main2 .main2__texto {
+    font-size: 29px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .main2 .main2__texto h2 {
+      margin-bottom: 10px;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 43px; }
+    .main2 .main2__texto p {
+      margin-left: 30px;
+      text-align: center; }
+    .main2 .main2__texto a {
+      text-align: center;
+      color: aliceblue;
+      text-decoration: none;
+      padding: 7px;
+      border-radius: 20px;
+      border: solid aliceblue;
+      margin-top: 10px;
+      font-weight: 700;
+      font-size: 32px;
+      font-family: 'Quicksand', sans-serif;
+      transition-duration: 1.5s; }
+      .main2 .main2__texto a:hover {
+        background-color: aliceblue;
+        color: #8b0520; }
+
+/*----------INDEX-------------------servicios------------------*/
+.servicios h2 {
+  text-align: center;
+  font-size: 43px;
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 50px; }
+
+.servicios .servicios__contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .servicios .servicios__contenedor div {
+    text-align: center;
+    color: #aa0202;
+    margin: 50px;
+    width: 320px;
+    height: 520px;
+    background-color: white;
+    border-radius: 8px;
+    -webkit-box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75); }
+    .servicios .servicios__contenedor div:hover {
+      transition: 1.5s;
+      transform: scale(1.05); }
+    .servicios .servicios__contenedor div img {
+      width: 320px;
+      height: 320px;
+      border-radius: 4px; }
+    .servicios .servicios__contenedor div h3 {
+      font-size: 20px;
+      font-weight: bolder;
+      font-family: 'Quicksand', sans-serif;
+      text-transform: uppercase;
+      margin-top: 4px;
+      margin-bottom: 0px; }
+    .servicios .servicios__contenedor div p {
+      margin-bottom: 2px;
+      font-size: 25px;
+      font-weight: 410;
+      padding-bottom: 12px; }
+    .servicios .servicios__contenedor div .servicios__contenedor__reserva {
+      color: aliceblue;
+      background: #020024;
+      background: linear-gradient(90deg, rgba(2, 0, 36, 0.883146) 0%, #790909 36%, red 100%);
+      padding: 9px;
+      text-decoration: none;
+      border-radius: 9px;
+      font-size: 20PX;
+      font-weight: 700;
+      font-family: 'Quicksand', sans-serif; }
+      .servicios .servicios__contenedor div .servicios__contenedor__reserva:hover {
+        color: aliceblue;
+        background: #020024;
+        background: linear-gradient(90deg, rgba(2, 0, 36, 0.883146) 0%, rgba(121, 9, 9, 0.705) 36%, rgba(255, 0, 0, 0.692) 100%); }
+
+/*----------INDEX----------------------CONTACTANOS---------------*/
+.formulario {
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #790909 35%, red 100%);
+  color: aliceblue;
+  line-height: 1.6;
+  font-family: 'Quicksand', sans-serif;
+  padding: 0 1.5em; }
+  .formulario .formulario__content {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em; }
+    .formulario .formulario__content .formulario__contactanos {
+      font-family: 'Quicksand', sans-serif;
+      text-align: center;
+      font-size: 43px; }
+    .formulario .formulario__content .formulario__contact__container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .formulario .formulario__content .formulario__contact__container .formulario__contact__form form {
+        display: grid;
+        grid-template-columns: 550px 550px; }
+        .formulario .formulario__content .formulario__contact__container .formulario__contact__form form p {
+          margin: 0;
+          padding: 1em; }
+          .formulario .formulario__content .formulario__contact__container .formulario__contact__form form p label {
+            display: block; }
+          .formulario .formulario__content .formulario__contact__container .formulario__contact__form form p button {
+            width: 100%;
+            padding: .7em;
+            border: none;
+            background: none;
+            outline: 0;
+            color: aliceblue;
+            border-bottom: 1px solid aliceblue;
+            border-radius: 6px;
+            color: aliceblue;
+            background-color: transparent;
+            border: solid aliceblue;
+            text-transform: uppercase;
+            padding: 1em;
+            border-radius: 30px; }
+            .formulario .formulario__content .formulario__contact__container .formulario__contact__form form p button:hover {
+              background-color: aliceblue;
+              color: #8b0520;
+              transition-duration: 1.5s; }
+            .formulario .formulario__content .formulario__contact__container .formulario__contact__form form p button:focus {
+              background-color: aliceblue;
+              color: #8b0520;
+              transition-duration: 1.5s; }
+          .formulario .formulario__content .formulario__contact__container .formulario__contact__form form p input {
+            width: 100%;
+            padding: .7em;
+            border: none;
+            background: none;
+            outline: 0;
+            color: aliceblue;
+            border-bottom: 1px solid aliceblue;
+            border-radius: 6px; }
+          .formulario .formulario__content .formulario__contact__container .formulario__contact__form form p textarea {
+            width: 100%;
+            padding: .7em;
+            border: none;
+            background: none;
+            outline: 0;
+            color: aliceblue;
+            border-bottom: 1px solid aliceblue;
+            border-radius: 6px; }
+        .formulario .formulario__content .formulario__contact__container .formulario__contact__form form .block {
+          grid-column: 1 / 3; }
+
+/*----------------------------------CLIENTES PAGE-------------------------------*/
+main .clientes video {
+  width: 100%;
+  display: block;
+  margin-bottom: 80px;
+  border-radius: 15px; }
+
+main .clientes h1 {
+  font-size: 43px;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 11px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 47px;
+  padding: 5px; }
+
+main .clientes h4 {
+  font-size: x-large;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 95px;
+  margin-top: 50px; }
+
+main .clientes .clientes__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center; }
+  main .clientes .clientes__container .clientes__container__1 img {
+    width: 200px;
+    border-radius: 200px;
+    height: 200px; }
+  main .clientes .clientes__container .clientes__container__1 h2 {
+    font-size: 30px; }
+  main .clientes .clientes__container .clientes__container__1 h3 {
+    font-size: 20px; }
+
+/*------------------------NOSOTROS-----------------------------------------------*/
+.quienes_somos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px; }
+  .quienes_somos div img {
+    display: flex;
+    width: 600px;
+    height: 600px;
+    padding: 0%;
+    border-radius: 5px; }
+  .quienes_somos .quienes__somos__texto {
+    color: aliceblue;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0s; }
+    .quienes_somos .quienes__somos__texto:hover {
+      background-color: aliceblue;
+      color: #8b0520; }
+    .quienes_somos .quienes__somos__texto h3 {
+      margin-bottom: 30px;
+      font-family: 'Quicksand', sans-serif;
+      margin-top: 20px;
+      font-size: 40px; }
+    .quienes_somos .quienes__somos__texto p {
+      margin-left: 75px; }
+    .quienes_somos .quienes__somos__texto .quienes__somos__texto2 {
+      margin-top: 20px; }
+    .quienes_somos .quienes__somos__texto a {
+      color: aliceblue;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 11px;
+      border: solid aliceblue;
+      margin-top: 29px;
+      font-weight: 700;
+      font-size: 36px;
+      font-family: 'Quicksand', sans-serif;
+      transition-duration: 1.5s; }
+
+/*---------------VARIABLES---------------*/
+/*-----listas ejemplo------------*/
+/*$font-size:
+
+50px    1
+30px    2
+20px    3
+10px    4
+
+h1{
+    font-size: nth($font-size, 3)
+}*/
+/* $ancho:720px;
+
+img{
+    width: $ancho / 2 +10;
+}*/
+/*$button:(
+    --key - value (valor) 
+    fondo-boton:black 
+    bordes-boton:2px solid tomato
+    color-texto:white
+);
+
+.boton{
+    background-color: map-get($map: , $key: );
+    border: map-get($button, bordes-boton);
+    color: map-get($button, color-texto);
+}*/
+/*%flex{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}*/
+/*ejemplo .contenedor{
+    @include flex (flex,space-around, center);
+}
+
+//!condicionales
+
+/*@mixin modos ($darkmode){
+    @if $darkmode == black {
+        border:solid 2px tomato
+    }@else{
+        border:solid 2px aqua
+    }
+}*/
+/*---------------VARIABLES---------------*/
+/*-----listas ejemplo------------*/
+/*$font-size:
+
+50px    1
+30px    2
+20px    3
+10px    4
+
+h1{
+    font-size: nth($font-size, 3)
+}*/
+/* $ancho:720px;
+
+img{
+    width: $ancho / 2 +10;
+}*/
+/*$button:(
+    --key - value (valor) 
+    fondo-boton:black 
+    bordes-boton:2px solid tomato
+    color-texto:white
+);
+
+.boton{
+    background-color: map-get($map: , $key: );
+    border: map-get($button, bordes-boton);
+    color: map-get($button, color-texto);
+}*/
+/*%flex{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}*/
+/*ejemplo .contenedor{
+    @include flex (flex,space-around, center);
+}
+
+//!condicionales
+
+/*@mixin modos ($darkmode){
+    @if $darkmode == black {
+        border:solid 2px tomato
+    }@else{
+        border:solid 2px aqua
+    }
+}*/

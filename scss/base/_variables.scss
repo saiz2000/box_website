@@ -1,0 +1,88 @@
+/*---------------VARIABLES---------------*/
+
+$words-color:aliceblue;
+
+/*-----listas ejemplo------------*/
+
+/*$font-size:
+
+50px    1
+30px    2
+20px    3
+10px    4
+
+h1{
+    font-size: nth($font-size, 3)
+}*/
+
+
+//! operaciones ejemplo
+/* $ancho:720px;
+
+img{
+    width: $ancho / 2 +10;
+}*/
+
+//! maps  ejemplo
+
+/*$button:(
+    --key - value (valor) 
+    fondo-boton:black 
+    bordes-boton:2px solid tomato
+    color-texto:white
+);
+
+.boton{
+    background-color: map-get($map: , $key: );
+    border: map-get($button, bordes-boton);
+    color: map-get($button, color-texto);
+}*/
+
+//! extends
+// % = placeholder 
+/*%flex{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}*/
+
+//! mixins
+
+@mixin flex-clasic($flex, $align, $justify){
+    display: $flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+
+@mixin flex-1($flex, $align){
+    display:$flex;
+    align-items: $align;
+}
+
+@mixin flex-2($flex, $direction, $justify, $align){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex-3($flex, $wrap, $justify){
+    display: $flex;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+}
+
+/*ejemplo .contenedor{
+    @include flex (flex,space-around, center);
+}
+
+//!condicionales
+
+/*@mixin modos ($darkmode){
+    @if $darkmode == black {
+        border:solid 2px tomato
+    }@else{
+        border:solid 2px aqua
+    }
+}*/
