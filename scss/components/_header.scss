@@ -22,8 +22,8 @@ header {
                 height: 20px;
                 }*/
                 &:hover{
-                    color:#1f1d1d;
-                    font-size: large;
+                    color: aliceblue;
+                    border-bottom: aliceblue solid;
                 }
             }
             div{
@@ -39,21 +39,10 @@ header {
                             border-radius: 4px;
                             font-size: medium
                         }
-                    }
-                    li{
-                        ul{
-                            .dropdown-menu{
-                                background: rgb(2, 0, 36);
-                                background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%);
-                                ;
-                            }
-                            li{
-                                a{
-                                    .dorpdown__cutomize{
-                                        display: flex;
-                                    }
-                                }
-                            }
+                        .dropdown-menu{
+                            background: rgb(2, 0, 36);
+                            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%)
+                            ;
                         }
                     }
                 }
