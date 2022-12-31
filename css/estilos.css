@@ -304,7 +304,7 @@ main {
 .main2 {
   display: flex;
   align-items: center;
-  margin: 41px 120px 41px 120px;
+  margin: 41px 95px 41px 120px;
   border-radius: 10px; }
   .main2 div img {
     display: flex;
@@ -556,10 +556,9 @@ main .quienes__somos {
 main .mensajeria {
   display: flex;
   align-items: center;
-  margin-right: 25px;
-  margin-left: 25px;
-  margin-bottom: 100px;
-  width: 95%; }
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 100px; }
   main .mensajeria .mensajeria__empresarial img {
     width: 500px;
     height: 500px;
@@ -601,13 +600,14 @@ main .mensajeria {
 main .mensajeria2 {
   display: flex;
   align-items: center;
-  margin-right: 25px;
-  margin-left: 25px;
-  margin-bottom: 40px;
-  width: 95%; }
+  flex-direction: row-reverse;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 100px; }
   main .mensajeria2 .mensajeria__alquiler img {
     width: 500px;
     height: 500px;
+    margin-left: 20px;
     padding: 0%;
     border-radius: 270px;
     -webkit-box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
@@ -621,7 +621,6 @@ main .mensajeria2 {
     width: 100%;
     color: aliceblue;
     font-size: 22px;
-    margin-left: 20px;
     font-family: 'Quicksand', sans-serif; }
     main .mensajeria2 .mensajeria__alquiler__texto h3 {
       margin-bottom: 20px;
@@ -812,14 +811,302 @@ img{
   .own__class {
     display: flex;
     justify-content: center; }
-    .own__class nav div {
-      /*a{
-                    .navbar-toggle{
-                        .collapse{
-                            text-align: center;
-                            margin-bottom: 28px;
-                        }
-                    }
-                }*/ }
-      .own__class nav div div .navbar-nav .nav-item {
-        margin: 0px 32px 20px 32px; } }
+    .own__class nav div div .navbar-nav .nav-item {
+      margin: 0px 32px 20px 32px; } }
+
+@media screen and (max-width: 470px) {
+  main .main div h2 {
+    font-size: 45px; }
+  main .main div p {
+    font-size: 25px; }
+  main .main div a {
+    font-size: 20px; } }
+
+@media screen and (min-width: 1287px) {
+  .main2 {
+    margin: 41px 170px 41px 170px; } }
+
+@media screen and (min-width: 1523px) {
+  .main2 {
+    margin: 41px 230px 41px 230px; } }
+
+@media screen and (min-width: 1750px) {
+  .main2 {
+    margin: 41px 310px 41px 310px; } }
+
+@media screen and (max-width: 1226px) {
+  .main2 div img {
+    width: 400px;
+    height: 400px; }
+  .main2 .main2__texto h2 {
+    font-size: 35px; }
+  .main2 .main2__texto p {
+    font-size: 28px; }
+  .main2 .main2__texto a {
+    font-size: 28px;
+    margin-top: 0px; } }
+
+@media screen and (max-width: 1157px) {
+  .main2 div img {
+    width: 360px;
+    height: 360px; }
+  .main2 .main2__texto h2 {
+    font-size: 35px;
+    margin-right: 10px; }
+  .main2 .main2__texto p {
+    font-size: 25px; }
+  .main2 .main2__texto a {
+    font-size: 25px;
+    margin-right: 10px; } }
+
+@media screen and (max-width: 1068px) {
+  .main2 {
+    flex-direction: column; }
+    .main2 div img {
+      width: 500px;
+      height: 500px;
+      margin-bottom: 30px; }
+    .main2 .main2__texto h2 {
+      font-size: 40px;
+      margin-right: 10px; }
+    .main2 .main2__texto p {
+      font-size: 30px; }
+    .main2 .main2__texto a {
+      font-size: 30px;
+      margin-right: 10px; } }
+
+@media screen and (max-width: 836px) {
+  .main2 div img {
+    width: 450px;
+    height: 450px;
+    margin-bottom: 30px; }
+  .main2 .main2__texto h2 {
+    font-size: 37px;
+    margin-right: 10px; }
+  .main2 .main2__texto p {
+    font-size: 27px; }
+  .main2 .main2__texto a {
+    font-size: 27px;
+    margin-right: 10px; } }
+
+@media screen and (max-width: 799px) {
+  .main2 div img {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 30px; }
+  .main2 .main2__texto h2 {
+    font-size: 37px;
+    margin-right: 17px; }
+  .main2 .main2__texto p {
+    font-size: 27px; }
+  .main2 .main2__texto a {
+    font-size: 27px;
+    margin-right: 10px; } }
+
+@media screen and (max-width: 747px) {
+  .main2 {
+    margin-right: 30px;
+    margin-left: 30px; }
+    .main2 div img {
+      display: none; }
+    .main2 .main2__texto {
+      margin-right: 10px; }
+      .main2 .main2__texto h2 {
+        font-size: 38px;
+        margin-right: 17px; }
+      .main2 .main2__texto p {
+        font-size: 28px; }
+      .main2 .main2__texto a {
+        font-size: 28px;
+        margin-right: 10px; } }
+
+@media screen and (max-width: 459px) {
+  .main2 .main2__texto {
+    margin-right: 10px; }
+    .main2 .main2__texto h2 {
+      font-size: 34px;
+      margin-right: 17px; }
+    .main2 .main2__texto p {
+      font-size: 24px; }
+    .main2 .main2__texto a {
+      font-size: 24px;
+      margin-right: 10px; } }
+
+@media screen and (max-width: 425px) {
+  .main2 {
+    margin-right: 20px;
+    margin-left: 20px; }
+    .main2 .main2__texto {
+      margin-right: 10px; }
+      .main2 .main2__texto h2 {
+        font-size: 28px;
+        margin-right: 17px; }
+      .main2 .main2__texto p {
+        font-size: 18px; }
+      .main2 .main2__texto a {
+        font-size: 18px;
+        margin-right: 10px; } }
+
+@media screen and (max-width: 659px) {
+  .servicios h2 {
+    font-size: 30px; }
+  .servicios .servicios__contenedor div {
+    width: 250px;
+    height: 410px; }
+    .servicios .servicios__contenedor div a img {
+      width: 250px;
+      height: 240px; }
+    .servicios .servicios__contenedor div p {
+      font-size: 19px; }
+    .servicios .servicios__contenedor div h3 {
+      font-size: 15px;
+      font-weight: 900; }
+    .servicios .servicios__contenedor div .servicios__contenedor__reserva {
+      font-size: 15PX;
+      font-weight: 700;
+      padding: 7px; } }
+
+@media screen and (max-width: 400px) {
+  .servicios h2 {
+    font-size: 25px; } }
+
+@media screen and (max-width: 1205px) {
+  .formulario .formulario__content .formulario__contact__container .formulario__contact__form form {
+    display: grid;
+    grid-template-columns: 420px 420px; } }
+
+@media screen and (max-width: 952px) {
+  .formulario .formulario__content .formulario__contact__container .formulario__contact__form form {
+    display: grid;
+    grid-template-columns: 320px 320px; } }
+
+@media screen and (max-width: 740px) {
+  .formulario .formulario__content .formulario__contact__container .formulario__contact__form form {
+    display: grid;
+    grid-template-columns: 220px 220px; } }
+
+@media screen and (max-width: 565px) {
+  .formulario .formulario__content .formulario__contactanos {
+    font-size: 32px; } }
+
+@media screen and (max-width: 540px) {
+  .formulario .formulario__content .formulario__contact__container .formulario__contact__form form {
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (max-width: 390px) {
+  .formulario .formulario__content .formulario__contactanos {
+    text-align: center;
+    font-size: 35px;
+    margin: 0px; } }
+
+@media screen and (max-width: 353px) {
+  .formulario .formulario__content .formulario__contactanos {
+    font-size: 24px; } }
+
+@media screen and (min-width: 1400px) {
+  main .quienes__somos {
+    margin: 0px 170px 41px 170px; } }
+
+@media screen and (max-width: 1470px) {
+  .quienes__somos {
+    flex-direction: column; }
+    .quienes__somos img {
+      margin-bottom: 30px; } }
+
+@media screen and (max-width: 745px) {
+  main .quienes__somos div img {
+    width: 430px;
+    height: 430px; } }
+
+@media screen and (max-width: 617px) {
+  main .quienes__somos div img {
+    width: 350px;
+    height: 350px; } }
+
+@media screen and (max-width: 506px) {
+  main .quienes__somos {
+    margin-right: 10px;
+    margin-left: 8px; }
+    main .quienes__somos div img {
+      display: none; } }
+
+@media screen and (max-width: 410px) {
+  main .quienes__somos .quienes__somos__texto h3 {
+    font-size: 40px; } }
+
+@media screen and (max-width: 1362px) {
+  main .mensajeria {
+    margin-right: 80px;
+    margin-left: 80px;
+    flex-direction: column; }
+    main .mensajeria .mensajeria__empresarial img {
+      margin-bottom: 35px; }
+  main .mensajeria2 {
+    margin-right: 60px;
+    margin-left: 80px;
+    flex-direction: column; }
+    main .mensajeria2 .mensajeria__alquiler img {
+      margin-bottom: 35px; } }
+
+@media screen and (max-width: 670px) {
+  main .mensajeria .mensajeria__empresarial img {
+    height: 450px;
+    width: 450px; }
+  main .mensajeria2 .mensajeria__alquiler img {
+    height: 450px;
+    width: 450px; } }
+
+@media screen and (max-width: 634px) {
+  main .mensajeria {
+    margin-right: 30px;
+    margin-left: 10px; }
+    main .mensajeria .mensajeria__empresarial img {
+      display: none; }
+  main .mensajeria2 {
+    margin-right: 10px;
+    margin-left: 30px; }
+    main .mensajeria2 .mensajeria__alquiler img {
+      display: none; } }
+
+@media screen and (max-width: 517px) {
+  main .mensajeria .mensajeria__empresarial__texto h3 {
+    font-size: 30px; }
+  main .mensajeria2 .mensajeria__alquiler__texto h3 {
+    font-size: 30px; } }
+
+@media screen and (max-width: 490px) {
+  main .mensajeria .mensajeria__empresarial__texto h3 {
+    font-size: 25px; }
+  main .mensajeria .mensajeria__empresarial__texto h4 {
+    font-size: 20px; }
+  main .mensajeria .mensajeria__empresarial__texto p {
+    font-size: 20px; }
+  main .mensajeria .mensajeria__empresarial__texto a {
+    font-size: 20px; }
+  main .mensajeria2 .mensajeria__alquiler__texto h3 {
+    font-size: 25px; }
+  main .mensajeria2 .mensajeria__alquiler__texto h4 {
+    font-size: 20px; }
+  main .mensajeria2 .mensajeria__alquiler__texto p {
+    font-size: 20px; }
+  main .mensajeria2 .mensajeria__alquiler__texto a {
+    font-size: 20px; } }
+
+@media screen and (max-width: 415px) {
+  main .mensajeria .mensajeria__empresarial__texto h3 {
+    font-size: 20px; }
+  main .mensajeria .mensajeria__empresarial__texto h4 {
+    font-size: 15px; }
+  main .mensajeria .mensajeria__empresarial__texto p {
+    font-size: 15px; }
+  main .mensajeria .mensajeria__empresarial__texto a {
+    font-size: 15px; }
+  main .mensajeria2 .mensajeria__alquiler__texto h3 {
+    font-size: 20px; }
+  main .mensajeria2 .mensajeria__alquiler__texto h4 {
+    font-size: 15px; }
+  main .mensajeria2 .mensajeria__alquiler__texto p {
+    font-size: 15px; }
+  main .mensajeria2 .mensajeria__alquiler__texto a {
+    font-size: 15px; } }
