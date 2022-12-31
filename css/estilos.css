@@ -39,6 +39,9 @@ span {
 #cotizacion {
   margin-top: 0px; }
 
+#footer {
+  margin-top: 0px; }
+
 /*---------------VARIABLES---------------*/
 /*---------------VARIABLES---------------*/
 header {
@@ -411,7 +414,7 @@ main .mensajeria2 {
   flex-direction: row-reverse;
   margin-left: 150px;
   margin-right: 150px;
-  margin-bottom: 100px; }
+  margin-bottom: 0px; }
   main .mensajeria2 .mensajeria__alquiler img {
     width: 500px;
     height: 500px;
@@ -772,7 +775,7 @@ footer {
 
 @media screen and (min-width: 1400px) {
   main .quienes__somos {
-    margin: 0px 170px 41px 170px; } }
+    margin: 0px 170px 0px 170px; } }
 
 @media screen and (max-width: 1470px) {
   .quienes__somos {

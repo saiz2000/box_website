@@ -330,7 +330,6 @@ main {
         border-radius: 10px;
         margin-left: 60px;
         margin-right: 60px;
-
         div {
             img {
                 display: flex;
@@ -349,7 +348,6 @@ main {
             justify-content: center;
             align-items: center;
             padding: 0s;
-
             h3 {
                 margin-bottom: 10px;
                 font-family: 'Quicksand', sans-serif;
@@ -443,7 +441,7 @@ main {
         flex-direction: row-reverse;
         margin-left: 150px;
         margin-right: 150px;
-        margin-bottom: 100px;
+        margin-bottom: 0px;
         .mensajeria__alquiler {
             img {
                 width: 500px;
