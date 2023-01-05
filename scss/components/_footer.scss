@@ -14,37 +14,70 @@ footer {
         max-width: 1200px;
         margin: auto;
         margin-top: 100px;
-    }
-    .box__footer {
-        display: flex;
-        flex-direction: column;
-        padding: 40px;
-        .logo {
-            img {
-                width: 50px;
+        .box__footer1 {
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            .logo {
+                img {
+                    width: 50px;
+                }
+            }
+            .terms {
+                max-width: 350px;
+                margin-top: 20px;
+                font-weight: 500;
+                color: $words-color;
+                font-size: 18px;
+            }
+            h2 {
+                margin-bottom: 30px;
+                color: #343434;
+                font-weight: 700;
+            }
+            a {
+                margin-top: 10px;
+                color: $words-color;
+                font-weight: 600;
+                text-decoration: none;
+            }
+            a {
+                .fab {
+                    font-size: 20px;
+                }
             }
         }
-        .terms {
-            max-width: 350px;
-            margin-top: 20px;
-            font-weight: 500;
-            color: $words-color;
-            font-size: 18px;
-        }
-        h2 {
-            margin-bottom: 30px;
-            color: #343434;
-            font-weight: 700;
-        }
-        a {
-            margin-top: 10px;
-            color: $words-color;
-            font-weight: 600;
-            text-decoration: none;
-        }
-        a {
-            .fab {
-                font-size: 20px;
+        .box__footer {
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            .logo {
+                img {
+                    width: 50px;
+                }
+            }
+            .terms {
+                max-width: 350px;
+                margin-top: 20px;
+                font-weight: 500;
+                color: $words-color;
+                font-size: 18px;
+            }
+            h2 {
+                margin-bottom: 30px;
+                color: #343434;
+                font-weight: 700;
+            }
+            a {
+                margin-top: 10px;
+                color: $words-color;
+                font-weight: 600;
+                text-decoration: none;
+            }
+            a {
+                .fab {
+                    font-size: 20px;
+                }
             }
         }
     }
