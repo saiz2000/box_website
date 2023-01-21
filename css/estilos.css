@@ -46,7 +46,8 @@ header {
   top: 0;
   z-index: 10;
   background: #020024;
-  background: linear-gradient(90deg, #020024 0%, #790909 35%, red 100%); }
+  background: linear-gradient(90deg, #01000c 0%, #790909 35%, red 100%);
+  /*background-color: red;*/ }
   header nav div a {
     text-decoration: none;
     color: aliceblue;
@@ -59,8 +60,8 @@ header {
       height: 72px;
       text-align: center; }
     header nav div a:hover {
-      color: aliceblue;
-      border-bottom: aliceblue solid; }
+      color: red;
+      background-color: aliceblue; }
   header nav div div ul {
     /*list-style: none;*/
     display: flex;
@@ -73,7 +74,7 @@ header {
       font-size: medium; }
     header nav div div ul li .dropdown-menu {
       background: #020024;
-      background: linear-gradient(90deg, #020024 0%, #790909 35%, red 100%); }
+      background: linear-gradient(90deg, #01000c 0%, #790909 35%, red 100%); }
 
 /*---------------VARIABLES---------------*/
 main {
@@ -211,6 +212,16 @@ main {
         color: aliceblue;
         background: #020024;
         background: linear-gradient(90deg, rgba(2, 0, 36, 0.883146) 0%, rgba(121, 9, 9, 0.705) 36%, rgba(255, 0, 0, 0.692) 100%); }
+
+.whatsapp a img {
+  position: fixed;
+  bottom: 10%;
+  right: 2%;
+  width: 50px;
+  height: 50px; }
+  .whatsapp a img:hover {
+    transition: 0.3s;
+    transform: scale(1.05); }
 
 .formulario {
   background: #020024;
