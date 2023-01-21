@@ -2,8 +2,9 @@
 
 //!/*----------INDEX-------------------main------------------*/
 main {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%);
+    /*background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%);*/
+    background-color: $background-color;
 
     .main {
         background-image: url(../img/fondo-provisional.jpg);
@@ -38,8 +39,9 @@ main {
                 color: $words-color;
                 font-size: x-large;
                 text-decoration: none;
-                background: rgba(2, 0, 36, 0.308);
-                background: linear-gradient(90deg, rgba(2, 0, 36, 0.315) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 0.397) 100%);
+                /*background: rgba(2, 0, 36, 0.308);
+                background: linear-gradient(90deg, rgba(2, 0, 36, 0.315) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 0.397) 100%);*/
+                background-color: rgba(204, 18, 18, 0.774);
                 padding: 4px;
                 margin: 20px;
                 border-radius: 10px;
@@ -100,7 +102,7 @@ main {
 
             &:hover {
                 background-color: $words-color;
-                color: rgb(139, 5, 32);
+                color: $background-color;
             }
         }
 
@@ -121,11 +123,11 @@ main {
 
         div {
             text-align: center;
-            color: rgb(170, 2, 2);
+            color: $background-color;
             margin: 50px;
             width: 320px;
             height: 520px;
-            background-color: white;
+            background-color: $words-color;
             border-radius: 8px;
             -webkit-box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
@@ -160,8 +162,9 @@ main {
 
             .servicios__contenedor__reserva {
                 color: $words-color;
-                background: rgb(2, 0, 36);
-                background: linear-gradient(90deg, rgba(2, 0, 36, 0.8831460674157303) 0%, rgba(121, 9, 9, 1) 36%, rgba(255, 0, 0, 1) 100%);
+                /*background: rgb(2, 0, 36);
+                background: linear-gradient(90deg, rgba(2, 0, 36, 0.8831460674157303) 0%, rgba(121, 9, 9, 1) 36%, rgba(255, 0, 0, 1) 100%);*/
+                background-color:$background-color;
                 padding: 9px;
                 text-decoration: none;
                 border-radius: 9px;
@@ -171,8 +174,9 @@ main {
 
                 &:hover {
                     color: $words-color;
-                    background: rgb(2, 0, 36);
-                    background: linear-gradient(90deg, rgba(2, 0, 36, 0.8831460674157303) 0%, rgba(121, 9, 9, 0.705) 36%, rgba(255, 0, 0, 0.692) 100%);
+                    /*background: rgb(2, 0, 36);
+                    background: linear-gradient(90deg, rgba(2, 0, 36, 0.8831460674157303) 0%, rgba(121, 9, 9, 0.705) 36%, rgba(255, 0, 0, 0.692) 100%);*/
+                    background-color: $background-color;
                 }
             }
         }
@@ -187,7 +191,7 @@ main {
             width: 50px;
             height: 50px;
             &:hover {
-                transition: 0.3s;
+                transition: 0.7s;
                 transform: scale(1.05);
             }
         }
@@ -195,15 +199,16 @@ main {
 }
 
 //!/*----------INDEX----------------------CONTACTANOS---------------*/
-.formulario {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%);
-    color: aliceblue;
+
+.formulario1{
+    background-color: $background-color;
+    color: $words-color;
     line-height: 1.6;
     font-family: 'Quicksand', sans-serif;
     padding: 0 1.5em;
 
     .formulario__content {
+        background-color: $background-color;
         max-width: 1170px;
         margin-left: auto;
         margin-right: auto;
@@ -250,15 +255,17 @@ main {
                             border-radius: 30px;
 
                             &:hover {
-                                background-color: aliceblue;
+                                background-color: $words-color;
                                 color: rgb(139, 5, 32);
                                 transition-duration: 1.5s;
+                                
                             }
 
                             &:focus {
-                                background-color: aliceblue;
+                                background-color: $words-color;
                                 color: rgb(139, 5, 32);
                                 transition-duration: 1.5s;
+                                
                             }
                         }
 
@@ -438,7 +445,6 @@ main {
                 font-weight: 700;
                 font-size: 25px;
                 font-family: 'Quicksand', sans-serif;
-                transition-duration: 1s;
                 &:hover{
                     background-color: aliceblue;
                     color: rgb(139, 5, 32);

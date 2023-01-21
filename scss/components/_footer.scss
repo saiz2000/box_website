@@ -5,8 +5,9 @@ footer {
     padding: 50px 0px;
     *background-image: url(../img/background-footer.svg);
     *background-size: cover;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%);
+    /*background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%);*/
+    background-color: $background-color;
     .container__footer {
         display: flex;
         flex-wrap: wrap;
@@ -32,7 +33,7 @@ footer {
             }
             h2 {
                 margin-bottom: 30px;
-                color: #343434;
+                color: $words-color;
                 font-weight: 700;
             }
             a {
@@ -65,7 +66,7 @@ footer {
             }
             h2 {
                 margin-bottom: 30px;
-                color: #343434;
+                color: $words-color;
                 font-weight: 700;
             }
             a {

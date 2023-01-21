@@ -8,27 +8,32 @@ body {
   font-family: 'Quicksand', sans-serif; }
 
 h2 {
-  color: aliceblue; }
+  color: white; }
 
 .servicios {
-  background: #020024;
-  background: linear-gradient(90deg, #020024 0%, #790909 35%, red 100%); }
+  /*background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%);*/
+  background-color: #cc1212; }
 
 .quienes_somos {
-  background: #020024;
-  background: linear-gradient(90deg, #020024 0%, #790909 35%, red 100%); }
+  /*background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%);*/
+  background-color: #cc1212; }
+
+.formulario {
+  background-color: #cc1212; }
 
 .cotizacion {
-  color: aliceblue; }
+  color: white; }
 
 .clientes {
-  color: aliceblue; }
+  color: white; }
 
 .main p {
-  color: aliceblue; }
+  color: white; }
 
 .main2 p {
-  color: aliceblue; }
+  color: white; }
 
 span {
   color: #2b2727; }
@@ -45,41 +50,45 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: #020024;
-  background: linear-gradient(90deg, #01000c 0%, #790909 35%, red 100%);
-  /*background-color: red;*/ }
+  /*background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(1, 0, 12) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%);
+    ;*/
+  /*background-color: red;*/
+  background-color: #cc1212; }
   header nav div a {
     text-decoration: none;
-    color: aliceblue;
-    /*img{
-                width: 20px;
-                height: 20px;
-                }*/ }
+    color: white; }
     header nav div a #main-icono {
-      width: 72px;
-      height: 72px;
+      width: 52px;
+      height: 52px;
       text-align: center; }
-    header nav div a:hover {
-      color: red;
-      background-color: aliceblue; }
   header nav div div ul {
     /*list-style: none;*/
     display: flex;
     margin: 31px; }
+    header nav div div ul li:hover {
+      background-color: white;
+      border-radius: 20px;
+      transition: 1.0s; }
     header nav div div ul li a {
-      color: aliceblue;
+      color: white;
       margin: 11px;
       padding: 1px;
       border-radius: 4px;
-      font-size: medium; }
+      font-weight: 500; }
+      header nav div div ul li a:hover {
+        color: #cc1212; }
     header nav div div ul li .dropdown-menu {
-      background: #020024;
-      background: linear-gradient(90deg, #01000c 0%, #790909 35%, red 100%); }
+      /*background: rgb(2, 0, 36);
+                            background: linear-gradient(90deg, rgb(1, 0, 12) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%)
+                            ;*/
+      background-color: #cc1212; }
 
 /*---------------VARIABLES---------------*/
 main {
-  background: #020024;
-  background: linear-gradient(90deg, #020024 0%, #790909 35%, red 100%); }
+  /*background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%);*/
+  background-color: #cc1212; }
   main .main {
     background-image: url(../img/fondo-provisional.jpg);
     width: 100%;
@@ -95,7 +104,7 @@ main {
         font-size: 60px;
         margin-bottom: 10px;
         font-weight: 500;
-        border: solid aliceblue;
+        border: solid white;
         padding: 10px;
         border-radius: 6px;
         font-family: 'Quicksand', sans-serif; }
@@ -104,11 +113,12 @@ main {
         font-size: 25px;
         font-weight: 465; }
       main .main div a {
-        color: aliceblue;
+        color: white;
         font-size: x-large;
         text-decoration: none;
-        background: rgba(2, 0, 36, 0.308);
-        background: linear-gradient(90deg, rgba(2, 0, 36, 0.315) 0%, #790909 35%, rgba(255, 0, 0, 0.397) 100%);
+        /*background: rgba(2, 0, 36, 0.308);
+                background: linear-gradient(90deg, rgba(2, 0, 36, 0.315) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 0.397) 100%);*/
+        background-color: rgba(204, 18, 18, 0.774);
         padding: 4px;
         margin: 20px;
         border-radius: 10px;
@@ -144,19 +154,19 @@ main {
     .main2 .main2__texto a {
       margin-left: 33px;
       text-align: center;
-      color: aliceblue;
+      color: white;
       text-decoration: none;
       padding: 2px;
       border-radius: 20px;
-      border: solid aliceblue;
+      border: solid white;
       margin-top: 2px;
       font-weight: 700;
       font-size: 32px;
       font-family: 'Quicksand', sans-serif;
       transition-duration: 1s; }
       .main2 .main2__texto a:hover {
-        background-color: aliceblue;
-        color: #8b0520; }
+        background-color: white;
+        color: #cc1212; }
 
 .servicios h2 {
   text-align: center;
@@ -170,7 +180,7 @@ main {
   justify-content: space-evenly; }
   .servicios .servicios__contenedor div {
     text-align: center;
-    color: #aa0202;
+    color: #cc1212;
     margin: 50px;
     width: 320px;
     height: 520px;
@@ -199,9 +209,10 @@ main {
       font-weight: 410;
       padding-bottom: 12px; }
     .servicios .servicios__contenedor div .servicios__contenedor__reserva {
-      color: aliceblue;
-      background: #020024;
-      background: linear-gradient(90deg, rgba(2, 0, 36, 0.883146) 0%, #790909 36%, red 100%);
+      color: white;
+      /*background: rgb(2, 0, 36);
+                background: linear-gradient(90deg, rgba(2, 0, 36, 0.8831460674157303) 0%, rgba(121, 9, 9, 1) 36%, rgba(255, 0, 0, 1) 100%);*/
+      background-color: #cc1212;
       padding: 9px;
       text-decoration: none;
       border-radius: 9px;
@@ -209,9 +220,10 @@ main {
       font-weight: 700;
       font-family: 'Quicksand', sans-serif; }
       .servicios .servicios__contenedor div .servicios__contenedor__reserva:hover {
-        color: aliceblue;
-        background: #020024;
-        background: linear-gradient(90deg, rgba(2, 0, 36, 0.883146) 0%, rgba(121, 9, 9, 0.705) 36%, rgba(255, 0, 0, 0.692) 100%); }
+        color: white;
+        /*background: rgb(2, 0, 36);
+                    background: linear-gradient(90deg, rgba(2, 0, 36, 0.8831460674157303) 0%, rgba(121, 9, 9, 0.705) 36%, rgba(255, 0, 0, 0.692) 100%);*/
+        background-color: #cc1212; }
 
 .whatsapp a img {
   position: fixed;
@@ -220,38 +232,38 @@ main {
   width: 50px;
   height: 50px; }
   .whatsapp a img:hover {
-    transition: 0.3s;
+    transition: 0.7s;
     transform: scale(1.05); }
 
-.formulario {
-  background: #020024;
-  background: linear-gradient(90deg, #020024 0%, #790909 35%, red 100%);
-  color: aliceblue;
+.formulario1 {
+  background-color: #cc1212;
+  color: white;
   line-height: 1.6;
   font-family: 'Quicksand', sans-serif;
   padding: 0 1.5em; }
-  .formulario .formulario__content {
+  .formulario1 .formulario__content {
+    background-color: #cc1212;
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     padding: 1.5em; }
-    .formulario .formulario__content .formulario__contactanos {
+    .formulario1 .formulario__content .formulario__contactanos {
       font-family: 'Quicksand', sans-serif;
       text-align: center;
       font-size: 43px; }
-    .formulario .formulario__content .formulario__contact__container {
+    .formulario1 .formulario__content .formulario__contact__container {
       display: flex;
       justify-content: center;
       flex-wrap: wrap; }
-      .formulario .formulario__content .formulario__contact__container .formulario__contact__form form {
+      .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form {
         display: grid;
         grid-template-columns: 550px 550px; }
-        .formulario .formulario__content .formulario__contact__container .formulario__contact__form form p {
+        .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form p {
           margin: 0;
           padding: 1em; }
-          .formulario .formulario__content .formulario__contact__container .formulario__contact__form form p label {
+          .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form p label {
             display: block; }
-          .formulario .formulario__content .formulario__contact__container .formulario__contact__form form p button {
+          .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form p button {
             width: 100%;
             padding: .7em;
             border: none;
@@ -266,15 +278,15 @@ main {
             text-transform: uppercase;
             padding: 1em;
             border-radius: 30px; }
-            .formulario .formulario__content .formulario__contact__container .formulario__contact__form form p button:hover {
-              background-color: aliceblue;
+            .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form p button:hover {
+              background-color: white;
               color: #8b0520;
               transition-duration: 1.5s; }
-            .formulario .formulario__content .formulario__contact__container .formulario__contact__form form p button:focus {
-              background-color: aliceblue;
+            .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form p button:focus {
+              background-color: white;
               color: #8b0520;
               transition-duration: 1.5s; }
-          .formulario .formulario__content .formulario__contact__container .formulario__contact__form form p input {
+          .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form p input {
             width: 100%;
             padding: .7em;
             border: none;
@@ -283,7 +295,7 @@ main {
             color: aliceblue;
             border-bottom: 1px solid aliceblue;
             border-radius: 6px; }
-          .formulario .formulario__content .formulario__contact__container .formulario__contact__form form p textarea {
+          .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form p textarea {
             width: 100%;
             padding: .7em;
             border: none;
@@ -292,7 +304,7 @@ main {
             color: aliceblue;
             border-bottom: 1px solid aliceblue;
             border-radius: 6px; }
-        .formulario .formulario__content .formulario__contact__container .formulario__contact__form form .block {
+        .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form .block {
           grid-column: 1 / 3; }
 
 main .clientes video {
@@ -345,7 +357,7 @@ main .quienes__somos {
     padding: 0%;
     border-radius: 5px; }
   main .quienes__somos .quienes__somos__texto {
-    color: aliceblue;
+    color: white;
     font-size: 24px;
     display: flex;
     flex-direction: column;
@@ -410,8 +422,7 @@ main .mensajeria {
       border: solid aliceblue;
       font-weight: 700;
       font-size: 25px;
-      font-family: 'Quicksand', sans-serif;
-      transition-duration: 1s; }
+      font-family: 'Quicksand', sans-serif; }
       main .mensajeria .mensajeria__empresarial__texto a:hover {
         background-color: aliceblue;
         color: #8b0520; }
@@ -538,8 +549,9 @@ footer {
   padding: 50px 0px;
   *background-image: url(../img/background-footer.svg);
   *background-size: cover;
-  background: #020024;
-  background: linear-gradient(90deg, #020024 0%, #790909 35%, red 100%); }
+  /*background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%);*/
+  background-color: #cc1212; }
   footer .container__footer {
     display: flex;
     flex-wrap: wrap;
@@ -557,15 +569,15 @@ footer {
         max-width: 350px;
         margin-top: 20px;
         font-weight: 500;
-        color: aliceblue;
+        color: white;
         font-size: 18px; }
       footer .container__footer .box__footer1 h2 {
         margin-bottom: 30px;
-        color: #343434;
+        color: white;
         font-weight: 700; }
       footer .container__footer .box__footer1 a {
         margin-top: 10px;
-        color: aliceblue;
+        color: white;
         font-weight: 600;
         text-decoration: none; }
       footer .container__footer .box__footer1 a .fab {
@@ -580,15 +592,15 @@ footer {
         max-width: 350px;
         margin-top: 20px;
         font-weight: 500;
-        color: aliceblue;
+        color: white;
         font-size: 18px; }
       footer .container__footer .box__footer h2 {
         margin-bottom: 30px;
-        color: #343434;
+        color: white;
         font-weight: 700; }
       footer .container__footer .box__footer a {
         margin-top: 10px;
-        color: aliceblue;
+        color: white;
         font-weight: 600;
         text-decoration: none; }
       footer .container__footer .box__footer a .fab {
@@ -600,27 +612,49 @@ footer {
     padding: 0px 40px; }
     footer .box__copyright p {
       margin-top: 20px;
-      color: aliceblue; }
+      color: white; }
     footer .box__copyright hr {
       border: none;
       height: 1px;
-      background-color: aliceblue; }
+      background-color: white; }
 
 /*---------------VARIABLES---------------*/
 @media screen and (min-width: 991px) {
   .own__class {
     display: flex;
     justify-content: center; }
-    .own__class nav div div .navbar-nav .nav-item {
-      margin: 0px 32px 20px 32px; } }
+    .own__class nav {
+      padding: 5px; }
+      .own__class nav div div .navbar-nav {
+        margin-top: 12px;
+        margin-bottom: 10px; }
+        .own__class nav div div .navbar-nav .nav-item {
+          margin-right: 30px;
+          margin-left: 30px; } }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 717px) {
   main .main div h2 {
     font-size: 45px; }
   main .main div p {
     font-size: 25px; }
   main .main div a {
     font-size: 20px; } }
+
+@media screen and (max-width: 530px) {
+  main .main div h2 {
+    font-size: 37px; }
+  main .main div p {
+    font-size: 22px; }
+  main .main div a {
+    font-size: 17px; } }
+
+@media screen and (max-width: 475px) {
+  main .main div h2 {
+    font-size: 32px; }
+  main .main div p {
+    font-size: 14px; }
+  main .main div a {
+    font-size: 12px; } }
 
 @media screen and (min-width: 1287px) {
   .main2 {
@@ -771,37 +805,37 @@ footer {
     font-size: 25px; } }
 
 @media screen and (max-width: 1650px) {
-  .formulario .formulario__content .formulario__contact__container .formulario__contact__form form {
+  .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form {
     display: grid;
-    grid-template-columns: 420px 420px; } }
+    grid-template-columns: 330px 330px; } }
 
 @media screen and (max-width: 952px) {
-  .formulario .formulario__content .formulario__contact__container .formulario__contact__form form {
+  .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form {
     display: grid;
     grid-template-columns: 320px 320px; } }
 
 @media screen and (max-width: 740px) {
-  .formulario .formulario__content .formulario__contact__container .formulario__contact__form form {
+  .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form {
     display: grid;
     grid-template-columns: 220px 220px; } }
 
 @media screen and (max-width: 565px) {
-  .formulario .formulario__content .formulario__contactanos {
+  .formulario1 .formulario__content .formulario__contactanos {
     font-size: 32px; } }
 
 @media screen and (max-width: 540px) {
-  .formulario .formulario__content .formulario__contact__container .formulario__contact__form form {
+  .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form {
     display: flex;
     flex-direction: column; } }
 
 @media screen and (max-width: 390px) {
-  .formulario .formulario__content .formulario__contactanos {
+  .formulario1 .formulario__content .formulario__contactanos {
     text-align: center;
     font-size: 35px;
     margin: 0px; } }
 
 @media screen and (max-width: 353px) {
-  .formulario .formulario__content .formulario__contactanos {
+  .formulario1 .formulario__content .formulario__contactanos {
     font-size: 24px; } }
 
 @media screen and (min-width: 1400px) {

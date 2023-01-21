@@ -4,28 +4,21 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
-    background: rgb(2, 0, 36);
+    /*background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgb(1, 0, 12) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%);
-    ;
+    ;*/
     /*background-color: red;*/
+    background-color:$background-color;
     nav{
         div{
             a{
                 #main-icono {
-                    width: 72px;
-                    height: 72px;
+                    width: 52px;
+                    height: 52px;
                     text-align: center;
                 }
                 text-decoration: none;
-                color: $words-color;
-                /*img{
-                width: 20px;
-                height: 20px;
-                }*/
-                &:hover{
-                    color:red;
-                    background-color: aliceblue;
-                }
+                color:$words-color;
             }
             div{
                 ul{
@@ -33,17 +26,26 @@ header {
                     display: flex;
                     margin: 31px;
                     li{
+                        &:hover{
+                            background-color:$words-color;
+                            border-radius: 20px;
+                            transition: 1.0s;
+                        }
                         a{
-                            color: $words-color;
+                            color:$words-color;
                             margin: 11px;
                             padding: 1px;
                             border-radius: 4px;
-                            font-size: medium
+                            font-weight: 500;
+                            &:hover{
+                                color: rgb(204, 18, 18);
+                            }
                         }
                         .dropdown-menu{
-                            background: rgb(2, 0, 36);
+                            /*background: rgb(2, 0, 36);
                             background: linear-gradient(90deg, rgb(1, 0, 12) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%)
-                            ;
+                            ;*/
+                            background-color: $background-color;
                         }
                     }
                 }
