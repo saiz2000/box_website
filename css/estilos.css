@@ -38,6 +38,12 @@ h2 {
 span {
   color: #2b2727; }
 
+main .box_video video {
+  width: 100%;
+  display: block;
+  margin-bottom: 80px;
+  border-radius: 15px; }
+
 #contactanos {
   margin-top: 0px; }
 
@@ -310,8 +316,7 @@ main {
 main .clientes video {
   width: 100%;
   display: block;
-  margin-bottom: 80px;
-  border-radius: 15px; }
+  margin-bottom: 80px; }
 
 main .clientes h1 {
   font-size: 43px;
@@ -342,6 +347,11 @@ main .clientes .clientes__container {
     width: 200px;
     border-radius: 200px;
     height: 200px; }
+
+main video {
+  width: 100%;
+  display: block;
+  margin-bottom: 80px; }
 
 main .quienes__somos {
   display: flex;
@@ -383,6 +393,11 @@ main .quienes__somos {
       main .quienes__somos .quienes__somos__texto a:hover {
         background-color: aliceblue;
         color: #8b0520; }
+
+main video {
+  width: 100%;
+  display: block;
+  margin-bottom: 80px; }
 
 main .mensajeria {
   display: flex;
@@ -471,35 +486,33 @@ main .mensajeria2 {
         background-color: aliceblue;
         color: #8b0520; }
 
-.formulario {
-  background: #020024;
-  background: linear-gradient(90deg, #020024 0%, #790909 35%, red 100%);
+.formulario1 {
   color: aliceblue;
   line-height: 1.6;
   font-family: 'Quicksand', sans-serif;
   padding: 0 1.5em; }
-  .formulario .formulario__content {
+  .formulario1 .formulario__content {
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     padding: 1.5em; }
-    .formulario .formulario__content .formulario__contactanos {
+    .formulario1 .formulario__content .formulario__contactanos {
       font-family: 'Quicksand', sans-serif;
       text-align: center;
       font-size: 43px; }
-    .formulario .formulario__content .formulario__contact__container {
+    .formulario1 .formulario__content .formulario__contact__container {
       display: flex;
       justify-content: center;
       flex-wrap: wrap; }
-      .formulario .formulario__content .formulario__contact__container .formulario__contact__form form {
+      .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form {
         display: grid;
         grid-template-columns: 550px 550px; }
-        .formulario .formulario__content .formulario__contact__container .formulario__contact__form form p {
+        .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form p {
           margin: 0;
           padding: 1em; }
-          .formulario .formulario__content .formulario__contact__container .formulario__contact__form form p label {
+          .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form p label {
             display: block; }
-          .formulario .formulario__content .formulario__contact__container .formulario__contact__form form p button {
+          .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form p button {
             width: 100%;
             padding: .7em;
             border: none;
@@ -514,15 +527,15 @@ main .mensajeria2 {
             text-transform: uppercase;
             padding: 1em;
             border-radius: 30px; }
-            .formulario .formulario__content .formulario__contact__container .formulario__contact__form form p button:hover {
+            .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form p button:hover {
               background-color: aliceblue;
               color: #8b0520;
               transition-duration: 1.5s; }
-            .formulario .formulario__content .formulario__contact__container .formulario__contact__form form p button:focus {
+            .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form p button:focus {
               background-color: aliceblue;
               color: #8b0520;
               transition-duration: 1.5s; }
-          .formulario .formulario__content .formulario__contact__container .formulario__contact__form form p input {
+          .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form p input {
             width: 100%;
             padding: .7em;
             border: none;
@@ -531,7 +544,7 @@ main .mensajeria2 {
             color: aliceblue;
             border-bottom: 1px solid aliceblue;
             border-radius: 6px; }
-          .formulario .formulario__content .formulario__contact__container .formulario__contact__form form p textarea {
+          .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form p textarea {
             width: 100%;
             padding: .7em;
             border: none;
@@ -540,7 +553,7 @@ main .mensajeria2 {
             color: aliceblue;
             border-bottom: 1px solid aliceblue;
             border-radius: 6px; }
-        .formulario .formulario__content .formulario__contact__container .formulario__contact__form form .block {
+        .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form .block {
           grid-column: 1 / 3; }
 
 /*---------------VARIABLES---------------*/
