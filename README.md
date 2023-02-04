@@ -1,8 +1,6 @@
 <h1 align="center">Hi 👋, I'm Andres</h1>
 <h3 align="center">A passionate developer from Colombia</h3>
 
-- 🔭 I’m currently working on [box.mensajeria](saiz2000.github.io/box_website/)
-
 - 🌱 I’m currently learning **JavaScript**
 
 - 👨‍💻 All of my projects are available at [https://github.com/saiz2000](https://github.com/saiz2000)
