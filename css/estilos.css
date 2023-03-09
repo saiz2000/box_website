@@ -38,12 +38,6 @@ h2 {
 span {
   color: #2b2727; }
 
-main .box_video video {
-  width: 100%;
-  display: block;
-  margin-bottom: 80px;
-  border-radius: 15px; }
-
 #contactanos {
   margin-top: 0px; }
 
@@ -56,10 +50,6 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  /*background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgb(1, 0, 12) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%);
-    ;*/
-  /*background-color: red;*/
   background-color: #cc1212; }
   header nav div a {
     text-decoration: none;
@@ -69,13 +59,8 @@ header {
       height: 52px;
       text-align: center; }
   header nav div div ul {
-    /*list-style: none;*/
     display: flex;
     margin: 31px; }
-    header nav div div ul li:hover {
-      background-color: white;
-      border-radius: 20px;
-      transition: 1.0s; }
     header nav div div ul li a {
       color: white;
       margin: 11px;
@@ -83,18 +68,17 @@ header {
       border-radius: 4px;
       font-weight: 500; }
       header nav div div ul li a:hover {
-        color: #cc1212; }
+        background-color: white;
+        color: #cc1212;
+        border-radius: 20px;
+        transition: 0.3s; }
     header nav div div ul li .dropdown-menu {
-      /*background: rgb(2, 0, 36);
-                            background: linear-gradient(90deg, rgb(1, 0, 12) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%)
-                            ;*/
       background-color: #cc1212; }
 
 /*---------------VARIABLES---------------*/
 main {
-  /*background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%);*/
-  background-color: #cc1212; }
+  background: #020024;
+  background: #cc1212; }
   main .main {
     background-image: url(../img/fondo-provisional.jpg);
     width: 100%;
@@ -122,8 +106,8 @@ main {
         color: white;
         font-size: x-large;
         text-decoration: none;
-        /*background: rgba(2, 0, 36, 0.308);
-                background: linear-gradient(90deg, rgba(2, 0, 36, 0.315) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 0.397) 100%);*/
+        background: rgba(2, 0, 36, 0.308);
+        background: #cc1212;
         background-color: rgba(204, 18, 18, 0.774);
         padding: 4px;
         margin: 20px;

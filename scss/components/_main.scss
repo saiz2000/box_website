@@ -2,9 +2,8 @@
 
 //!/*----------INDEX-------------------main------------------*/
 main {
-    /*background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%);*/
-    background-color: $background-color;
+    background: rgb(2, 0, 36);
+    background: $background-color;
 
     .main {
         background-image: url(../img/fondo-provisional.jpg);
@@ -39,8 +38,8 @@ main {
                 color: $words-color;
                 font-size: x-large;
                 text-decoration: none;
-                /*background: rgba(2, 0, 36, 0.308);
-                background: linear-gradient(90deg, rgba(2, 0, 36, 0.315) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 0.397) 100%);*/
+                background: rgba(2, 0, 36, 0.308);
+                background: $background-color;
                 background-color: rgba(204, 18, 18, 0.774);
                 padding: 4px;
                 margin: 20px;
@@ -164,7 +163,7 @@ main {
                 color: $words-color;
                 /*background: rgb(2, 0, 36);
                 background: linear-gradient(90deg, rgba(2, 0, 36, 0.8831460674157303) 0%, rgba(121, 9, 9, 1) 36%, rgba(255, 0, 0, 1) 100%);*/
-                background-color:$background-color;
+                background-color: $background-color;
                 padding: 9px;
                 text-decoration: none;
                 border-radius: 9px;
@@ -182,14 +181,16 @@ main {
         }
     }
 }
+
 .whatsapp {
-    a{
-        img{
+    a {
+        img {
             position: fixed;
             bottom: 10%;
             right: 2%;
             width: 50px;
             height: 50px;
+
             &:hover {
                 transition: 0.7s;
                 transform: scale(1.05);
@@ -200,7 +201,7 @@ main {
 
 //!/*----------INDEX----------------------CONTACTANOS---------------*/
 
-.formulario1{
+.formulario1 {
     background-color: $background-color;
     color: $words-color;
     line-height: 1.6;
@@ -258,14 +259,14 @@ main {
                                 background-color: $words-color;
                                 color: rgb(139, 5, 32);
                                 transition-duration: 1.5s;
-                                
+
                             }
 
                             &:focus {
                                 background-color: $words-color;
                                 color: rgb(139, 5, 32);
                                 transition-duration: 1.5s;
-                                
+
                             }
                         }
 
@@ -300,6 +301,8 @@ main {
         }
     }
 }
+
+
 
 //!---------------------------------CLIENTES PAGE------------------------------//
 //!/*----------------------------------CLIENTES PAGE-------------------------------*/
@@ -345,16 +348,18 @@ main {
 //!------------------------NOSOTROS----------------------------------------------//
 //!/*------------------------NOSOTROS-----------------------------------------------*/
 main {
-    video{
+    video {
         width: 100%;
         display: block;
         margin-bottom: 80px;
     }
+
     .quienes__somos {
         @include flex-clasic(flex, center, space-around);
         border-radius: 10px;
         margin-left: 60px;
         margin-right: 60px;
+
         div {
             img {
                 display: flex;
@@ -373,6 +378,7 @@ main {
             justify-content: center;
             align-items: center;
             padding: 0s;
+
             h3 {
                 margin-bottom: 10px;
                 font-family: 'Quicksand', sans-serif;
@@ -407,17 +413,19 @@ main {
 //!-------------------------SERVICIOS PAGE----------------------------------------!//
 
 main {
-    video{
+    video {
         width: 100%;
         display: block;
         margin-bottom: 80px;
     }
+
     .mensajeria {
         display: flex;
         align-items: center;
         margin-left: 150px;
         margin-right: 150px;
         margin-bottom: 100px;
+
         .mensajeria__empresarial {
             img {
                 width: 500px;
@@ -429,6 +437,7 @@ main {
                 box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
             }
         }
+
         .mensajeria__empresarial__texto {
             @include flex-2(flex, column, right, center);
             width: 100%;
@@ -436,14 +445,17 @@ main {
             font-size: 22px;
             margin-left: 20px;
             font-family: 'Quicksand', sans-serif;
-            h3{
+
+            h3 {
                 margin-bottom: 20px;
                 font-size: 32px;
             }
-            p{
+
+            p {
                 margin-top: 10px;
                 padding: 0px;
             }
+
             a {
                 color: aliceblue;
                 text-decoration: none;
@@ -453,7 +465,8 @@ main {
                 font-weight: 700;
                 font-size: 25px;
                 font-family: 'Quicksand', sans-serif;
-                &:hover{
+
+                &:hover {
                     background-color: aliceblue;
                     color: rgb(139, 5, 32);
                 }
@@ -464,13 +477,14 @@ main {
 
 
 main {
-    .mensajeria2{
+    .mensajeria2 {
         display: flex;
         align-items: center;
         flex-direction: row-reverse;
         margin-left: 150px;
         margin-right: 150px;
         margin-bottom: 0px;
+
         .mensajeria__alquiler {
             img {
                 width: 500px;
@@ -483,19 +497,23 @@ main {
                 box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
             }
         }
+
         .mensajeria__alquiler__texto {
             @include flex-2(flex, column, right, center);
             width: 100%;
             color: aliceblue;
             font-size: 22px;
             font-family: 'Quicksand', sans-serif;
-            h3{
+
+            h3 {
                 margin-bottom: 20px;
                 font-size: 32px;
             }
-            p{
+
+            p {
                 padding: 0px;
             }
+
             a {
                 color: aliceblue;
                 text-decoration: none;
@@ -506,7 +524,8 @@ main {
                 font-size: 25px;
                 font-family: 'Quicksand', sans-serif;
                 transition-duration: 1s;
-                &:hover{
+
+                &:hover {
                     background-color: aliceblue;
                     color: rgb(139, 5, 32);
                 }
@@ -612,5 +631,3 @@ main {
         }
     }
 }
-
-

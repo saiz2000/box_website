@@ -1,55 +1,52 @@
 @import "./base/variables";
 
+
 header {
     position: sticky;
     top: 0;
     z-index: 10;
-    /*background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgb(1, 0, 12) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%);
-    ;*/
-    /*background-color: red;*/
-    background-color:$background-color;
-    nav{
-        div{
-            a{
+    background-color: $background-color;
+
+    nav {
+        div {
+            a {
                 #main-icono {
                     width: 52px;
                     height: 52px;
                     text-align: center;
                 }
+
                 text-decoration: none;
-                color:$words-color;
+                color: $words-color;
             }
-            div{
-                ul{
-                    /*list-style: none;*/
+
+            div {
+                ul {
                     display: flex;
                     margin: 31px;
-                    li{
-                        &:hover{
-                            background-color:$words-color;
-                            border-radius: 20px;
-                            transition: 1.0s;
-                        }
-                        a{
-                            color:$words-color;
+
+                    li {
+                        a {
+                            color: $words-color;
                             margin: 11px;
                             padding: 1px;
                             border-radius: 4px;
                             font-weight: 500;
-                            &:hover{
-                                color: rgb(204, 18, 18);
+
+                            &:hover {
+                                background-color: $words-color;
+                                color: $background-color;
+                                border-radius: 20px;
+                                transition: 0.3s;
                             }
                         }
-                        .dropdown-menu{
-                            /*background: rgb(2, 0, 36);
-                            background: linear-gradient(90deg, rgb(1, 0, 12) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%)
-                            ;*/
+
+                        .dropdown-menu {
                             background-color: $background-color;
                         }
                     }
                 }
             }
-        }        
+        }
     }
 }
