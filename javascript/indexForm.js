@@ -41,3 +41,28 @@ form.addEventListener('submit', submitForm)*/
 
 ////////////////////////////////////////////////////////////////////////////////////
 
+
+
+// NOTIFICACIONES //
+
+
+//tostify//
+const form = document.querySelector('form');
+form.addEventListener('submit', function(){
+    Toastify({
+        text:"formulario enviado",
+        gravity:"bottom",
+        position:"center",
+        duration: 2000,
+        style: {
+            background: "linear-gradient(to right, rgb(204, 18, 18), rgb(204, 18, 18)",
+        },
+    }).showToast();
+});
+
+
+
+
+
+
+
