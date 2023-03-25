@@ -41,8 +41,11 @@ form.addEventListener('submit', submitForm)*/
 
 ////////////////////////////////////////////////////////////////////////////////////
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> formulario
 // NOTIFICACIONES //
 
 
