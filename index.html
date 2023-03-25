@@ -115,30 +115,22 @@
                 <h1 class="formulario__contactanos">DEJANOS UN<span> MENSAJE</span></h1>
                 <div class="formulario__contact__container">
                     <div class="formulario__contact__form">
-                        <form action="">
-                            <!--<p>
-                                <label>alquiler motocicleta</label>
-                                <input type="radio" name="Asunto">
-                            </p>
-                            <p>
-                                <label>servicios de mensajeria </label>
-                                <input type="radio" name="Asunto">
-                            </p>-->
+                        <form action="https://formsubmit.co/box.mensajeria.col@gmail.com" method="POST">
                             <p>
                                 <label>Nombre*</label>
-                                <input type="text" id="nombre" name="Nombre" required>
+                                <input type="text" id="nombre" name="Nombre" placeholder="escriba su nombre" required>
                             </p>
                             <p>
                                 <label>Email*</label>
-                                <input type="email" id="email" name="Email" required>
+                                <input type="email" id="email" name="Email" placeholder="escriba su email" required>
                             </p>
                             <p>
                                 <label>Numero*</label>
-                                <input type="tel" id="numero" name="Numero" required>
+                                <input type="tel" id="numero" name="Numero" placeholder="escriba su numero" required>
                             </p>
                             <p>
                                 <label>Empresa</label>
-                                <input type="text" id="empresa" name="Asunto">
+                                <input type="text" id="empresa" name="Asunto" placeholder="escriba el nombre de la empresa ">
                             </p>
                             <p class="block">
                                 <label>Dejanos un mensaje:*</label>
@@ -149,6 +141,9 @@
                                     send
                                 </button>
                             </p>
+                            <input type="hidden" name="_subject" value="New email siuu!">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
                         </form>
                     </div>
                 </div>
@@ -209,3 +204,4 @@
         crossorigin="anonymous"></script>
     <script src="javascript/indexForm.js"></script>
 </body>
+</html>

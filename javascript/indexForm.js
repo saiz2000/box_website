@@ -1,4 +1,6 @@
-class formulario {
+// IMPLEMENTACION FOMRULARIO //
+
+/*class formulario {
     constructor(nombre, mail, numero, empresa, mensaje) {
         this.nombre = nombre
         this.mail = mail
@@ -31,11 +33,11 @@ const submitForm = (event) => {
     console.log(internalInput)
 
     // Clear the form fields
-    event.target.reset();
+    event.target.reset()
 }
 
 const form = document.querySelector('form')
-form.addEventListener('submit', submitForm)
+form.addEventListener('submit', submitForm)*/
 
-
+////////////////////////////////////////////////////////////////////////////////////
 
