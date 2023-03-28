@@ -201,6 +201,21 @@ main {
 
 //!/*----------INDEX----------------------CONTACTANOS---------------*/
 
+.form_img {
+    div {
+        img {
+            background-image: url(../img/fondo-provisional.jpg);
+            width: 100%;
+            height: 87vh;
+            max-height: 60vh;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+
 .formulario1 {
     background-color: $background-color;
     color: $words-color;
@@ -230,7 +245,7 @@ main {
                 form {
                     display: grid;
                     grid-template-columns: 550px 550px;
-                    
+
 
                     p {
                         margin: 0;
@@ -537,6 +552,7 @@ main {
 
 //!-------------------------NOSOTROS PAGE----------------------------------------!//
 .formulario1 {
+    margin-top: 30px;
     color: aliceblue;
     line-height: 1.6;
     font-family: 'Quicksand', sans-serif;
