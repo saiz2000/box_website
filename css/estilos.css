@@ -1,4 +1,5 @@
 /*---------------VARIABLES---------------*/
+/*$main-font: 'Open Sans', sans-serif;*/
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +58,9 @@ span {
   margin-top: 0px; }
 
 /*---------------VARIABLES---------------*/
+/*$main-font: 'Open Sans', sans-serif;*/
 /*---------------VARIABLES---------------*/
+/*$main-font: 'Open Sans', sans-serif;*/
 header {
   position: sticky;
   top: 0;
@@ -88,43 +91,40 @@ header {
       background-color: #cc1212; }
 
 /*---------------VARIABLES---------------*/
+/*$main-font: 'Open Sans', sans-serif;*/
+video {
+  width: 100%;
+  display: block;
+  margin-bottom: 80px; }
+
 main {
   background: #020024;
   background: #cc1212; }
-  main .main {
-    background-image: url(../img/fondo-provisional.jpg);
-    width: 100%;
-    height: 87vh;
-    background-size: cover;
-    background-attachment: fixed;
-    text-align: center;
-    display: flex;
-    justify-content: center; }
-    main .main div {
-      margin: 82px; }
-      main .main div h2 {
-        font-size: 60px;
-        margin-bottom: 10px;
-        font-weight: 500;
-        border: solid white;
-        padding: 10px;
-        border-radius: 6px;
-        font-family: 'Quicksand', sans-serif; }
-      main .main div p {
-        margin: 17px;
-        font-size: 25px;
-        font-weight: 465; }
-      main .main div a {
-        color: white;
-        font-size: x-large;
-        text-decoration: none;
-        background: rgba(2, 0, 36, 0.308);
-        background: #cc1212;
-        background-color: rgba(204, 18, 18, 0.774);
-        padding: 4px;
-        margin: 20px;
-        border-radius: 10px;
-        font-family: 'Quicksand', sans-serif; }
+  main .main div {
+    margin: 82px; }
+    main .main div h2 {
+      font-size: 60px;
+      margin-bottom: 10px;
+      font-weight: 500;
+      border: solid white;
+      padding: 10px;
+      border-radius: 6px;
+      font-family: 'Quicksand', sans-serif; }
+    main .main div p {
+      margin: 17px;
+      font-size: 25px;
+      font-weight: 465; }
+    main .main div a {
+      color: white;
+      font-size: x-large;
+      text-decoration: none;
+      background: rgba(2, 0, 36, 0.308);
+      background: #cc1212;
+      background-color: rgba(204, 18, 18, 0.774);
+      padding: 4px;
+      margin: 20px;
+      border-radius: 10px;
+      font-family: 'Quicksand', sans-serif; }
 
 .main2 {
   display: flex;
@@ -150,66 +150,78 @@ main {
     .main2 .main2__texto h2 {
       margin-bottom: 10px;
       font-family: 'Quicksand', sans-serif;
-      font-size: 43px; }
+      font-size: 30px; }
     .main2 .main2__texto p {
       margin-left: 30px; }
     .main2 .main2__texto a {
-      margin-left: 33px;
-      text-align: center;
-      color: white;
+      color: aliceblue;
+      margin-top: 15px;
       text-decoration: none;
-      padding: 2px;
+      padding: 1px;
+      border-radius: 11px;
+      border: solid aliceblue;
+      font-weight: 570;
+      font-size: 30px;
+      font-family: 'Quicksand', sans-serif;
+      transition-duration: 1s;
+      background-color: aliceblue;
+      color: #8b0520;
+      padding: 5px 10px;
+      border: none;
       border-radius: 20px;
-      border: solid white;
-      margin-top: 2px;
-      font-weight: 700;
-      font-size: 32px;
-      font-family: 'Quicksand', sans-serif;
-      transition-duration: 1s; }
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition-duration: 0.3s; }
       .main2 .main2__texto a:hover {
-        background-color: white;
-        color: #cc1212; }
+        background-color: aliceblue;
+        color: #8b0520; }
+      .main2 .main2__texto a:hover {
+        background-color: #8b0520;
+        color: aliceblue; }
 
 .servicios h2 {
   text-align: center;
-  font-size: 43px;
+  font-size: 30px;
   font-family: 'Quicksand', sans-serif;
   padding-top: 50px; }
 
 .servicios .servicios__contenedor {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
   .servicios .servicios__contenedor div {
     text-align: center;
     color: #cc1212;
     margin: 50px;
-    width: 320px;
-    height: 520px;
+    width: 300px;
+    height: 410px;
     background-color: white;
     border-radius: 8px;
-    -webkit-box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75); }
+    box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
+    transition: transform 0.3s ease-in-out; }
     .servicios .servicios__contenedor div:hover {
-      transition: 1.5s;
-      transform: scale(1.05); }
+      transform: scale(1.05);
+      box-shadow: -1px 2px 32px 0px rgba(0, 0, 0, 0.85); }
     .servicios .servicios__contenedor div img {
-      width: 320px;
-      height: 320px;
-      border-radius: 4px; }
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 4px 4px 0 0; }
     .servicios .servicios__contenedor div h3 {
-      font-size: 20px;
-      font-weight: bolder;
+      font-size: 19px;
+      font-weight: bold;
       font-family: 'Quicksand', sans-serif;
       text-transform: uppercase;
-      margin-top: 4px;
-      margin-bottom: 0px; }
+      margin-top: 10px;
+      margin-bottom: 0; }
     .servicios .servicios__contenedor div p {
-      margin-bottom: 2px;
-      font-size: 25px;
-      font-weight: 410;
-      padding-bottom: 12px; }
+      text-align: left;
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: 400;
+      padding: 0 20px; }
     .servicios .servicios__contenedor div .servicios__contenedor__reserva {
       color: white;
       /*background: rgb(2, 0, 36);
@@ -220,12 +232,33 @@ main {
       border-radius: 9px;
       font-size: 20PX;
       font-weight: 700;
-      font-family: 'Quicksand', sans-serif; }
+      font-family: 'Quicksand', sans-serif;
+      color: #cc1212;
+      margin-top: 15px;
+      text-decoration: none;
+      padding: 1px;
+      border-radius: 11px;
+      border: solid #cc1212;
+      font-weight: 570;
+      font-size: 30px;
+      font-family: 'Quicksand', sans-serif;
+      transition-duration: 1s;
+      background-color: #cc1212;
+      color: white;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition-duration: 0.3s; }
       .servicios .servicios__contenedor div .servicios__contenedor__reserva:hover {
-        color: white;
-        /*background: rgb(2, 0, 36);
-                    background: linear-gradient(90deg, rgba(2, 0, 36, 0.8831460674157303) 0%, rgba(121, 9, 9, 0.705) 36%, rgba(255, 0, 0, 0.692) 100%);*/
-        background-color: #cc1212; }
+        background-color: #cc1212;
+        color: white; }
+      .servicios .servicios__contenedor div .servicios__contenedor__reserva:hover {
+        background-color: #8b0520;
+        color: aliceblue; }
 
 .whatsapp a img {
   position: fixed;
@@ -274,49 +307,41 @@ main {
           padding: 1em; }
           .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form p label {
             display: block; }
-          .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form p button {
+          .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form p button[type="submit"] {
             width: 100%;
-            padding: .7em;
-            border: none;
-            background: none;
-            outline: 0;
-            color: aliceblue;
-            border-bottom: 1px solid aliceblue;
-            border-radius: 6px;
-            color: aliceblue;
-            background-color: transparent;
-            border: solid aliceblue;
-            text-transform: uppercase;
             padding: 1em;
-            border-radius: 30px; }
-            .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form p button:hover {
-              background-color: white;
-              color: #8b0520;
-              transition-duration: 1.5s; }
-            .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form p button:focus {
-              background-color: white;
-              color: #8b0520;
-              transition-duration: 1.5s; }
-          .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form p input {
-            width: 100%;
-            padding: .7em;
             border: none;
-            background: none;
-            outline: 0;
-            color: aliceblue;
-            border-bottom: 1px solid aliceblue;
-            border-radius: 6px; }
-          .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form p textarea {
-            width: 100%;
-            padding: .7em;
-            border: none;
-            background: none;
-            outline: 0;
-            color: aliceblue;
-            border-bottom: 1px solid aliceblue;
-            border-radius: 6px; }
-        .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form .block {
-          grid-column: 1 / 3; }
+            border-radius: 30px;
+            text-transform: uppercase;
+            background-color: white;
+            color: #cc1212;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out; }
+            .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form p button[type="submit"]:hover {
+              background-color: #8b0520;
+              color: white;
+              cursor: pointer;
+              transition-duration: 0s; }
+        .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form input {
+          width: 100%;
+          padding: .7em;
+          border: none;
+          background: none;
+          outline: 0;
+          color: aliceblue;
+          border-bottom: 1px solid aliceblue;
+          border-radius: 6px; }
+        .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form form textarea {
+          width: 100%;
+          padding: .7em;
+          border: none;
+          background: none;
+          outline: 0;
+          color: aliceblue;
+          border-bottom: 1px solid aliceblue;
+          border-radius: 6px; }
+      .formulario1 .formulario__content .formulario__contact__container .formulario__contact__form .block {
+        grid-column: 1 / 3; }
 
 main .clientes video {
   width: 100%;
@@ -353,11 +378,6 @@ main .clientes .clientes__container {
     border-radius: 200px;
     height: 200px; }
 
-main video {
-  width: 100%;
-  display: block;
-  margin-bottom: 80px; }
-
 main .quienes__somos {
   display: flex;
   align-items: center;
@@ -373,20 +393,22 @@ main .quienes__somos {
     border-radius: 5px; }
   main .quienes__somos .quienes__somos__texto {
     color: white;
-    font-size: 24px;
+    font-size: 23px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0s; }
+    padding: 0s;
+    margin-top: 10px; }
     main .quienes__somos .quienes__somos__texto h3 {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       font-family: 'Quicksand', sans-serif;
       font-size: 45px; }
     main .quienes__somos .quienes__somos__texto p {
       margin-left: 40px; }
     main .quienes__somos .quienes__somos__texto a {
       color: aliceblue;
+      margin-top: 15px;
       text-decoration: none;
       padding: 1px;
       border-radius: 11px;
@@ -394,102 +416,176 @@ main .quienes__somos {
       font-weight: 570;
       font-size: 30px;
       font-family: 'Quicksand', sans-serif;
-      transition-duration: 1s; }
+      transition-duration: 1s;
+      background-color: aliceblue;
+      color: #8b0520;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition-duration: 0.3s; }
       main .quienes__somos .quienes__somos__texto a:hover {
         background-color: aliceblue;
         color: #8b0520; }
-
-main video {
-  width: 100%;
-  display: block;
-  margin-bottom: 80px; }
+      main .quienes__somos .quienes__somos__texto a:hover {
+        background-color: #8b0520;
+        color: aliceblue; }
 
 main .mensajeria {
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin-left: 150px;
-  margin-right: 150px;
-  margin-bottom: 100px; }
-  main .mensajeria .mensajeria__empresarial img {
-    width: 500px;
-    height: 500px;
-    padding: 0%;
-    border-radius: 270px;
-    -webkit-box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75); }
-  main .mensajeria .mensajeria__empresarial__texto {
+  padding: 2em;
+  background-color: #cc1212;
+  margin-bottom: 50px; }
+  main .mensajeria__empresarial {
+    max-width: 50%;
+    margin-right: 2em;
     display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-items: center;
-    width: 100%;
-    color: aliceblue;
-    font-size: 22px;
-    margin-left: 20px;
-    font-family: 'Quicksand', sans-serif; }
-    main .mensajeria .mensajeria__empresarial__texto h3 {
-      margin-bottom: 20px;
-      font-size: 32px; }
-    main .mensajeria .mensajeria__empresarial__texto p {
-      margin-top: 10px;
-      padding: 0px; }
-    main .mensajeria .mensajeria__empresarial__texto a {
-      color: aliceblue;
-      text-decoration: none;
-      padding: 7px;
-      border-radius: 15px;
-      border: solid aliceblue;
-      font-weight: 700;
-      font-size: 25px;
-      font-family: 'Quicksand', sans-serif; }
-      main .mensajeria .mensajeria__empresarial__texto a:hover {
-        background-color: aliceblue;
-        color: #8b0520; }
+    justify-content: center;
+    align-items: center; }
+    main .mensajeria__empresarial img {
+      width: 400px;
+      height: 550px;
+      margin-left: 1em; }
+  main .mensajeria__empresarial__texto {
+    margin-right: 2em;
+    /* Add margin to make space even */ }
+    main .mensajeria__empresarial__texto h3 {
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 0.5em; }
+      main .mensajeria__empresarial__texto h3 span {
+        color: #2b2727; }
+    main .mensajeria__empresarial__texto h4 {
+      color: white;
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 0.5em; }
+    main .mensajeria__empresarial__texto p {
+      color: white;
+      font-size: 1.1em;
+      margin-bottom: 1.5em; }
+    main .mensajeria__empresarial__texto a {
+      display: inline-block;
+      background-color: white;
+      color: #cc1212;
+      text-transform: uppercase;
+      font-size: 1em;
+      font-weight: bold;
+      padding: 0.8em 1.5em;
+      border-radius: 30px;
+      transition: background-color 0.3s ease-in-out; }
+      main .mensajeria__empresarial__texto a:hover {
+        color: white;
+        background-color: #b1050f; }
 
 main .mensajeria2 {
   display: flex;
-  align-items: center;
+  justify-content: center;
   flex-direction: row-reverse;
-  margin-left: 150px;
-  margin-right: 150px;
-  margin-bottom: 0px; }
-  main .mensajeria2 .mensajeria__alquiler img {
-    width: 500px;
-    height: 500px;
-    margin-left: 20px;
-    padding: 0%;
-    border-radius: 270px;
-    -webkit-box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75); }
-  main .mensajeria2 .mensajeria__alquiler__texto {
+  align-items: center;
+  padding: 2em;
+  background-color: #cc1212;
+  margin-bottom: 50px; }
+  main .mensajeria2__alquiler {
+    max-width: 50%;
+    margin-right: 2em;
     display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-items: center;
-    width: 100%;
-    color: aliceblue;
-    font-size: 22px;
-    font-family: 'Quicksand', sans-serif; }
-    main .mensajeria2 .mensajeria__alquiler__texto h3 {
-      margin-bottom: 20px;
-      font-size: 32px; }
-    main .mensajeria2 .mensajeria__alquiler__texto p {
-      padding: 0px; }
-    main .mensajeria2 .mensajeria__alquiler__texto a {
-      color: aliceblue;
-      text-decoration: none;
-      padding: 7px;
-      border-radius: 15px;
-      border: solid aliceblue;
-      font-weight: 700;
-      font-size: 25px;
-      font-family: 'Quicksand', sans-serif;
-      transition-duration: 1s; }
-      main .mensajeria2 .mensajeria__alquiler__texto a:hover {
-        background-color: aliceblue;
-        color: #8b0520; }
+    justify-content: center;
+    align-items: center; }
+    main .mensajeria2__alquiler img {
+      width: 400px;
+      height: 550px; }
+  main .mensajeria2__alquiler__texto {
+    margin-right: 2em;
+    /* Add margin to make space even */
+    margin-left: 1em; }
+    main .mensajeria2__alquiler__texto h3 {
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 0.5em; }
+      main .mensajeria2__alquiler__texto h3 span {
+        color: #2b2727; }
+    main .mensajeria2__alquiler__texto h4 {
+      color: white;
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 0.5em; }
+    main .mensajeria2__alquiler__texto p {
+      color: white;
+      font-size: 1.1em;
+      margin-bottom: 1.5em; }
+    main .mensajeria2__alquiler__texto a {
+      display: inline-block;
+      background-color: white;
+      color: #cc1212;
+      text-transform: uppercase;
+      font-size: 1em;
+      font-weight: bold;
+      padding: 0.8em 1.5em;
+      border-radius: 30px;
+      transition: background-color 0.3s ease-in-out; }
+      main .mensajeria2__alquiler__texto a:hover {
+        color: white;
+        background-color: #b1050f; }
+
+main .Personas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  background-color: #cc1212; }
+  main .Personas__rent {
+    max-width: 50%;
+    margin-right: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main .Personas__rent img {
+      width: 400px;
+      height: 480px;
+      margin-left: 1em; }
+  main .Personas__rent__texto {
+    margin-right: 2em;
+    /* Add margin to make space even */ }
+    main .Personas__rent__texto h3 {
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 0.5em; }
+      main .Personas__rent__texto h3 span {
+        color: #2b2727; }
+    main .Personas__rent__texto h4 {
+      color: white;
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 0.5em; }
+    main .Personas__rent__texto p {
+      color: white;
+      font-size: 1.1em;
+      margin-bottom: 1.5em; }
+    main .Personas__rent__texto a {
+      display: inline-block;
+      background-color: white;
+      color: #cc1212;
+      text-transform: uppercase;
+      font-size: 1em;
+      font-weight: bold;
+      padding: 0.8em 1.5em;
+      border-radius: 30px;
+      transition: background-color 0.3s ease-in-out; }
+      main .Personas__rent__texto a:hover {
+        color: white;
+        background-color: #b1050f; }
 
 .formulario1 {
   margin-top: 30px;
@@ -505,7 +601,7 @@ main .mensajeria2 {
     .formulario1 .formulario__content .formulario__contactanos {
       font-family: 'Quicksand', sans-serif;
       text-align: center;
-      font-size: 43px; }
+      font-size: 30px; }
     .formulario1 .formulario__content .formulario__contact__container {
       display: flex;
       justify-content: center;
@@ -563,6 +659,7 @@ main .mensajeria2 {
           grid-column: 1 / 3; }
 
 /*---------------VARIABLES---------------*/
+/*$main-font: 'Open Sans', sans-serif;*/
 footer {
   width: 100%;
   padding: 50px 0px;
@@ -638,6 +735,7 @@ footer {
       background-color: white; }
 
 /*---------------VARIABLES---------------*/
+/*$main-font: 'Open Sans', sans-serif;*/
 @media screen and (min-width: 991px) {
   .own__class {
     display: flex;

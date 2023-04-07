@@ -1,20 +1,17 @@
 @import "../base/variables";
 
 //!/*----------INDEX-------------------main------------------*/
+video {
+    width: 100%;
+    display: block;
+    margin-bottom: 80px;
+}
+
 main {
     background: rgb(2, 0, 36);
     background: $background-color;
 
     .main {
-        background-image: url(../img/fondo-provisional.jpg);
-        width: 100%;
-        height: 87vh;
-        background-size: cover;
-        background-attachment: fixed;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-
         div {
             margin: 82px;
 
@@ -78,7 +75,7 @@ main {
         h2 {
             margin-bottom: 10px;
             font-family: 'Quicksand', sans-serif;
-            font-size: 43px;
+            font-size: 30px;
         }
 
         p {
@@ -86,77 +83,99 @@ main {
         }
 
         a {
-            margin-left: 33px;
-            text-align: center;
-            color: $words-color;
+            &:hover {
+                background-color: aliceblue;
+                color: rgb(139, 5, 32);
+            }
+
+            color: aliceblue;
+            margin-top: 15px;
             text-decoration: none;
-            padding: 2px;
-            border-radius: 20px;
-            border: solid $words-color;
-            margin-top: 2px;
-            font-weight: 700;
-            font-size: 32px;
-            font-family: 'Quicksand', sans-serif;
+            padding: 1px;
+            border-radius: 11px;
+            border: solid aliceblue;
+            font-weight: 570;
+            font-size: 30px;
+            font-family: 'Quicksand',
+            sans-serif;
             transition-duration: 1s;
 
+            // Estilos para el botón
+            background-color: aliceblue;
+            color: rgb(139, 5, 32);
+            padding: 5px 10px;
+            border: none;
+            border-radius: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition-duration: 0.3s;
+
             &:hover {
-                background-color: $words-color;
-                color: $background-color;
+                background-color: rgb(139, 5, 32);
+                color: aliceblue;
             }
         }
 
     }
 }
 
+
+
 //!/*----------INDEX-------------------servicios------------------*/
+
 .servicios {
     h2 {
         text-align: center;
-        font-size: 43px;
+        font-size: 30px;
         font-family: 'Quicksand', sans-serif;
         padding-top: 50px;
     }
 
     .servicios__contenedor {
-        @include flex-3 (flex, wrap, space-evenly);
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
 
         div {
             text-align: center;
             color: $background-color;
             margin: 50px;
-            width: 320px;
-            height: 520px;
+            width: 300px;
+            height: 410px;
             background-color: $words-color;
             border-radius: 8px;
-            -webkit-box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
             box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
+            transition: transform 0.3s ease-in-out;
 
             &:hover {
-                transition: 1.5s;
                 transform: scale(1.05);
+                box-shadow: -1px 2px 32px 0px rgba(0, 0, 0, 0.85);
             }
 
             img {
-                width: 320px;
-                height: 320px;
-                border-radius: 4px;
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 4px 4px 0 0;
             }
 
             h3 {
-                font-size: 20px;
-                font-weight: bolder;
+                font-size: 19px;
+                font-weight: bold;
                 font-family: 'Quicksand', sans-serif;
                 text-transform: uppercase;
-                margin-top: 4px;
-                margin-bottom: 0px;
+                margin-top: 10px;
+                margin-bottom: 0;
             }
 
             p {
-                margin-bottom: 2px;
-                font-size: 25px;
-                font-weight: 410;
-                padding-bottom: 12px;
+                text-align: left;
+                margin-bottom: 10px;
+                font-size: 20px;
+                font-weight: 400;
+                padding: 0 20px;
             }
 
             .servicios__contenedor__reserva {
@@ -172,10 +191,37 @@ main {
                 font-family: 'Quicksand', sans-serif;
 
                 &:hover {
-                    color: $words-color;
-                    /*background: rgb(2, 0, 36);
-                    background: linear-gradient(90deg, rgba(2, 0, 36, 0.8831460674157303) 0%, rgba(121, 9, 9, 0.705) 36%, rgba(255, 0, 0, 0.692) 100%);*/
                     background-color: $background-color;
+                    color: $words-color;
+                }
+
+                color: $background-color;
+                margin-top: 15px;
+                text-decoration: none;
+                padding: 1px;
+                border-radius: 11px;
+                border: solid $background-color;
+                font-weight: 570;
+                font-size: 30px;
+                font-family: 'Quicksand',
+                sans-serif;
+                transition-duration: 1s;
+
+                // Estilos para el botón
+                background-color: $background-color;
+                color: $words-color;
+                padding: 5px 10px;
+                border: none;
+                border-radius: 20px;
+                font-size: 18px;
+                font-weight: bold;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition-duration: 0.3s;
+
+                &:hover {
+                    background-color: rgb(139, 5, 32);
+                    color: aliceblue;
                 }
             }
         }
@@ -255,68 +301,58 @@ main {
                             display: block;
                         }
 
-                        button {
+                        button[type="submit"] {
                             width: 100%;
-                            padding: .7em;
-                            border: none;
-                            background: none;
-                            outline: 0;
-                            color: aliceblue;
-                            border-bottom: 1px solid aliceblue;
-                            border-radius: 6px;
-                            color: aliceblue;
-                            background-color: transparent;
-                            border: solid aliceblue;
-                            text-transform: uppercase;
                             padding: 1em;
+                            border: none;
                             border-radius: 30px;
+                            text-transform: uppercase;
+                            background-color: $words-color;
+                            color: $background-color;
+                            font-weight: bold;
+                            transition: background-color 0.3s ease-in-out;
 
                             &:hover {
-                                background-color: $words-color;
-                                color: rgb(139, 5, 32);
-                                transition-duration: 1.5s;
-
-                            }
-
-                            &:focus {
-                                background-color: $words-color;
-                                color: rgb(139, 5, 32);
-                                transition-duration: 1.5s;
-
+                                background-color: rgb(139, 5, 32);
+                                color: $words-color;
+                                cursor: pointer;
+                                transition-duration: 0s;
                             }
                         }
 
-                        input {
-                            width: 100%;
-                            padding: .7em;
-                            border: none;
-                            background: none;
-                            outline: 0;
-                            color: aliceblue;
-                            border-bottom: 1px solid aliceblue;
-                            border-radius: 6px;
-                        }
-
-                        textarea {
-                            width: 100%;
-                            padding: .7em;
-                            border: none;
-                            background: none;
-                            outline: 0;
-                            color: aliceblue;
-                            border-bottom: 1px solid aliceblue;
-                            border-radius: 6px;
-                        }
                     }
 
-                    .block {
-                        grid-column: 1 / 3;
+                    input {
+                        width: 100%;
+                        padding: .7em;
+                        border: none;
+                        background: none;
+                        outline: 0;
+                        color: aliceblue;
+                        border-bottom: 1px solid aliceblue;
+                        border-radius: 6px;
                     }
+
+                    textarea {
+                        width: 100%;
+                        padding: .7em;
+                        border: none;
+                        background: none;
+                        outline: 0;
+                        color: aliceblue;
+                        border-bottom: 1px solid aliceblue;
+                        border-radius: 6px;
+                    }
+                }
+
+                .block {
+                    grid-column: 1 / 3;
                 }
             }
         }
     }
 }
+
 
 
 
@@ -363,13 +399,8 @@ main {
 
 //!------------------------NOSOTROS----------------------------------------------//
 //!/*------------------------NOSOTROS-----------------------------------------------*/
-main {
-    video {
-        width: 100%;
-        display: block;
-        margin-bottom: 80px;
-    }
 
+main {
     .quienes__somos {
         @include flex-clasic(flex, center, space-around);
         border-radius: 10px;
@@ -388,15 +419,16 @@ main {
 
         .quienes__somos__texto {
             color: $words-color;
-            font-size: 24px;
+            font-size: 23px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             padding: 0s;
+            margin-top: 10px;
 
             h3 {
-                margin-bottom: 10px;
+                margin-bottom: 20px;
                 font-family: 'Quicksand', sans-serif;
                 font-size: 45px;
             }
@@ -412,6 +444,7 @@ main {
                 }
 
                 color: aliceblue;
+                margin-top: 15px;
                 text-decoration: none;
                 padding: 1px;
                 border-radius: 11px;
@@ -420,71 +453,23 @@ main {
                 font-size: 30px;
                 font-family: 'Quicksand',
                 sans-serif;
-                transition-duration: 1s
-            }
-        }
-    }
-}
+                transition-duration: 1s;
 
-//!-------------------------SERVICIOS PAGE----------------------------------------!//
-
-main {
-    video {
-        width: 100%;
-        display: block;
-        margin-bottom: 80px;
-    }
-
-    .mensajeria {
-        display: flex;
-        align-items: center;
-        margin-left: 150px;
-        margin-right: 150px;
-        margin-bottom: 100px;
-
-        .mensajeria__empresarial {
-            img {
-                width: 500px;
-                height: 500px;
-                padding: 0%;
-                border-radius: 270px;
-                -webkit-box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
-                -moz-box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
-                box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
-            }
-        }
-
-        .mensajeria__empresarial__texto {
-            @include flex-2(flex, column, right, center);
-            width: 100%;
-            color: aliceblue;
-            font-size: 22px;
-            margin-left: 20px;
-            font-family: 'Quicksand', sans-serif;
-
-            h3 {
-                margin-bottom: 20px;
-                font-size: 32px;
-            }
-
-            p {
-                margin-top: 10px;
-                padding: 0px;
-            }
-
-            a {
-                color: aliceblue;
-                text-decoration: none;
-                padding: 7px;
-                border-radius: 15px;
-                border: solid aliceblue;
-                font-weight: 700;
-                font-size: 25px;
-                font-family: 'Quicksand', sans-serif;
+                // Estilos para el botón
+                background-color: aliceblue;
+                color: rgb(139, 5, 32);
+                padding: 5px 10px;
+                border: none;
+                border-radius: 20px;
+                font-size: 18px;
+                font-weight: bold;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition-duration: 0.3s;
 
                 &:hover {
-                    background-color: aliceblue;
-                    color: rgb(139, 5, 32);
+                    background-color: rgb(139, 5, 32);
+                    color: aliceblue;
                 }
             }
         }
@@ -492,58 +477,222 @@ main {
 }
 
 
-main {
-    .mensajeria2 {
-        display: flex;
-        align-items: center;
-        flex-direction: row-reverse;
-        margin-left: 150px;
-        margin-right: 150px;
-        margin-bottom: 0px;
 
-        .mensajeria__alquiler {
+
+
+
+//!-------------------------SERVICIOS PAGE----------------------------------------!//
+
+main {
+    .mensajeria {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+        background-color: $background-color;
+        margin-bottom: 50px;
+
+        &__empresarial {
+            max-width: 50%;
+            margin-right: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             img {
-                width: 500px;
-                height: 500px;
-                margin-left: 20px;
-                padding: 0%;
-                border-radius: 270px;
-                -webkit-box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
-                -moz-box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
-                box-shadow: -1px 2px 22px 0px rgba(0, 0, 0, 0.75);
+                width: 400px;
+                height: 550px;
+                margin-left: 1em;
             }
         }
 
-        .mensajeria__alquiler__texto {
-            @include flex-2(flex, column, right, center);
-            width: 100%;
-            color: aliceblue;
-            font-size: 22px;
-            font-family: 'Quicksand', sans-serif;
+        &__empresarial__texto {
+            margin-right: 2em;
+            /* Add margin to make space even */
 
             h3 {
-                margin-bottom: 20px;
-                font-size: 32px;
+                color: $words-color;
+                font-size: 2em;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 0.5em;
+
+                span {
+                    color: #2b2727;
+                }
+            }
+
+            h4 {
+                color: $words-color;
+                font-size: 1.2em;
+                font-weight: bold;
+                margin-bottom: 0.5em;
             }
 
             p {
-                padding: 0px;
+                color: $words-color;
+                font-size: 1.1em;
+                margin-bottom: 1.5em;
             }
 
             a {
-                color: aliceblue;
-                text-decoration: none;
-                padding: 7px;
-                border-radius: 15px;
-                border: solid aliceblue;
-                font-weight: 700;
-                font-size: 25px;
-                font-family: 'Quicksand', sans-serif;
-                transition-duration: 1s;
+                display: inline-block;
+                background-color: $words-color;
+                color: $background-color;
+                text-transform: uppercase;
+                font-size: 1em;
+                font-weight: bold;
+                padding: 0.8em 1.5em;
+                border-radius: 30px;
+                transition: background-color 0.3s ease-in-out;
 
                 &:hover {
-                    background-color: aliceblue;
-                    color: rgb(139, 5, 32);
+                    color: $words-color;
+                    background-color: darken(#e30613, 10%);
+                }
+            }
+        }
+    }
+}
+
+main {
+    .mensajeria2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 2em;
+        background-color: $background-color;
+        margin-bottom: 50px;
+
+        &__alquiler {
+            max-width: 50%;
+            margin-right: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 400px;
+                height: 550px;
+            }
+        }
+
+        &__alquiler__texto {
+            margin-right: 2em;
+            /* Add margin to make space even */
+            margin-left: 1em;
+
+            h3 {
+                color: $words-color;
+                font-size: 2em;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 0.5em;
+
+                span {
+                    color: #2b2727;
+                }
+            }
+
+            h4 {
+                color: $words-color;
+                font-size: 1.2em;
+                font-weight: bold;
+                margin-bottom: 0.5em;
+            }
+
+            p {
+                color: $words-color;
+                font-size: 1.1em;
+                margin-bottom: 1.5em;
+            }
+
+            a {
+                display: inline-block;
+                background-color: $words-color;
+                color: $background-color;
+                text-transform: uppercase;
+                font-size: 1em;
+                font-weight: bold;
+                padding: 0.8em 1.5em;
+                border-radius: 30px;
+                transition: background-color 0.3s ease-in-out;
+
+                &:hover {
+                    color: $words-color;
+                    background-color: darken(#e30613, 10%);
+                }
+            }
+        }
+    }
+}
+
+main {
+    .Personas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+        background-color: $background-color;
+
+        &__rent {
+            max-width: 50%;
+            margin-right: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 400px;
+                height: 480px;
+                margin-left: 1em;
+            }
+        }
+
+        &__rent__texto {
+            margin-right: 2em;
+            /* Add margin to make space even */
+
+            h3 {
+                color: $words-color;
+                font-size: 2em;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 0.5em;
+
+                span {
+                    color: #2b2727;
+                }
+            }
+
+            h4 {
+                color: $words-color;
+                font-size: 1.2em;
+                font-weight: bold;
+                margin-bottom: 0.5em;
+            }
+
+            p {
+                color: $words-color;
+                font-size: 1.1em;
+                margin-bottom: 1.5em;
+            }
+
+            a {
+                display: inline-block;
+                background-color: $words-color;
+                color: $background-color;
+                text-transform: uppercase;
+                font-size: 1em;
+                font-weight: bold;
+                padding: 0.8em 1.5em;
+                border-radius: 30px;
+                transition: background-color 0.3s ease-in-out;
+
+                &:hover {
+                    color: $words-color;
+                    background-color: darken(#e30613, 10%);
                 }
             }
         }
@@ -567,7 +716,7 @@ main {
         .formulario__contactanos {
             font-family: 'Quicksand', sans-serif;
             text-align: center;
-            font-size: 43px;
+            font-size: 30px;
         }
 
         .formulario__contact__container {
