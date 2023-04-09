@@ -2,6 +2,14 @@
 
 $words-color:white;
 $background-color: rgb(204, 18, 18);
+/* Variables */
+$main-font: 'Quicksand', sans-serif;
+$main-color: aliceblue;
+$secondary-color: rgb(139, 5, 32);
+$main-padding: 0;
+$main-margin: 41px 95px 41px 120px;
+$main-border-radius: 10px;
+
 /*$main-font: 'Open Sans', sans-serif;*/
 
 
@@ -29,4 +37,21 @@ $background-color: rgb(204, 18, 18);
     display: $flex;
     flex-wrap: $wrap;
     justify-content: $justify;
+}
+
+/* Mixins */
+@mixin flex-basic($display, $align, $justify) {
+  display: $display;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin flex-column($align, $justify) {
+  @include flex-basic(flex, $align, $justify);
+  flex-direction: column;
+}
+
+@mixin flex-wrap($justify) {
+  @include flex-basic(flex, center, $justify);
+  flex-wrap: wrap;
 }

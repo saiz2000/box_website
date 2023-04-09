@@ -37,7 +37,7 @@
     <header class="own__class">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a href="./index.html"><img src="./img/logo-PERFECTO.png" alt="logo" id="main-icono"></a>
+                <a href="../index.html"><img src="../img/logo-PERFECTO.png" alt="logo" id="main-icono"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -46,21 +46,23 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a aria-current="page" href="./pages/nosotros.html">NOSOTROS</a>
+                            <a aria-current="page" href="../pages/nosotros.html">NOSOTROS</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class=" dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">SREVICIOS
+                                data-bs-toggle="dropdown" aria-expanded="false">SREVICIOS
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dorpdown__cutomize" href="./pages/mensajeria.html">BOX MENSAJERIA</a></li>
-                                <li><a class="dorpdown__cutomize" href="./pages/alquiler.html">BOX RENT COORPORATIVO</a></li>
-                                <li><a class="dorpdown__cutomize" href="./pages/personas.html">BOS RENT PERSONAS</a></li>
+                                <li><a class="dorpdown__cutomize" href="../pages/mensajeria.html">BOX MENSAJERIA</a></li>
+                                <li><a class="dorpdown__cutomize" href="../pages/alquiler.html">BOX RENT COORPORATIVO</a>
+                                </li>
+                                <li><a class="dorpdown__cutomize" href="../pages/personas.html">BOS RENT PERSONAS</a>
+                                </li>
                                 <!--<li><a class="dropdown-item" href="#">Something else here</a></li>-->
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="./pages/contactanos.html">CONTACTANOS</a>
+                            <a href="../pages/contactanos.html">CONTACTANOS</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class=" dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -68,8 +70,8 @@
                                 MAS
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dorpdown__cutomize" href="./pages/clientes.html">CLIENTES</a></li>
-                                <li><a class="dorpdown__cutomize" href="./pages/trabaja.html">TRABAJA EN BOX</a></li>
+                                <li><a class="dorpdown__cutomize" href="../pages/clientes.html">CLIENTES</a></li>
+                                <li><a class="dorpdown__cutomize" href="../pages/trabaja.html">TRABAJA EN BOX</a></li>
                                 <!--<li><a class="dropdown-item" href="#">Something else here</a></li>-->
                             </ul>
                     </ul>
@@ -78,106 +80,44 @@
         </nav>
     </header>
     <main>
-        <section class="main">
-            <video loop autoplay muted>
-                <source src="../img/video-4.mp4" type="video/mp4">
-            </video>
-
-        </section>
-        <section class="main2">
+        <section class="mensajeria">
+            <div class=" mensajeria__empresarial">
+                <img src="../img/box_mensajeria_empresaria.png.png" alt="">
+            </div>
             <div>
-                <img src="./img/Box-imagen-port.png" alt="">
-            </div>
-            <div class="main2__texto">
-                <h2>¿QUIENES SOMOS?</h2>
-                <p>En Box mensajería, nos especializamos en ofrecer 
-                servicios de mensajería y paquetería a empresas. 
-                </p>
-                <p>Además, también ofrecemos alquiler de flota de 
-                transporte para mensajería empresarial, brindando 
-                soluciones personalizadas y eficientes para satisfacer 
-                las necesidades 
-                específicas de nuestros clientes corporativos.
-                </p>
-                <a href="./pages/contactanos.html">contactanos</a>
-            </div>
-        </section>
-        <section class="servicios">
-            <h2>NUESTROS SERVI<span>CIOS</span></h2>
-            <div class="servicios__contenedor">
-                <div>
-                    <a href="./pages/alquiler.html">
-                        <img src="./img/alquiler__corp__fixed.jpeg" alt="Alquiler">
-                    </a>
-                    <h3>Box rent COORPORATIVO</h3>
-                    <p>Alquila una flota de motocicletas 0 kilometros de 125 cc hasta 200 cc para tu empresa. </p>
-                    <a href="./pages/cotizacion.html" class="servicios__contenedor__reserva">RESERVA AHORA</a>
-                </div>
-                <div>
-                    <a href="./pages/mensajeria.html">
-                        <img src="./img/mensajeria__empresarial__fixed.png" alt="Mensajeria">
-                    </a>
-                    <h3>Mensajeria empresarial</h3>
-                    <p> servicio de mensajería empresarial tiempo completo
-                        para transportar una amplia variedad de cargas</p>
-                    <a href="./pages/cotizacion.html" class="servicios__contenedor__reserva">RESERVA AHORA</a>
-                </div>
-                <div>
-                    <a href="./pages/personas.html">
-                        <img src="./img/empresarial__fixed.png.png" alt="Alquiler">
-                    </a>
-                    <h3>Box Rent PERSONAS</h3>
-                    <p>Ideal para personas que necesitan desplazarse por la ciudad de manera ágil y económica</p>
-                    <a href="./pages/cotizacion.html" class="servicios__contenedor__reserva">RESERVA AHORA</a>
-                </div>
-            </div>
-        </section>
+                <div class="mensajeria__empresarial__texto" id="mensaje-empresarial">
+                    <h3>MENSAJERIA <span>EMPRESARIAL</span></h3>
+                    <H4>Distrubuimos los productos y documentos que comercializa tu empresa</H4>
+                    <p>Ofrecemos un servicio de mensajería empresarial tiempo completo
+                        y confiable que incluye la capacidad para transportar una amplia variedad de cargas, desde
+                        documentos y paquetes hasta envíos de mayor envergadura. Nuestros vehículos están equipados para
+                        transportar cargas de diferentes pesos y tamaños, lo que nos permite manejar de manera eficiente
+                        la distribución de carga liviana, media y pesada. Con nuestra amplia capacidad de carga, podemos
+                        adaptarnos a las necesidades de envío de cualquier empresa, sin importar el tamaño o la
+                        complejidad de su carga.
+                        Una de las principales ventajas de nuestra empresa es
+                        que todas nuestras flotas de mensajería cuentan con GPS
+                        (localización en tiempo real), lo que significa que nuestros
+                        clientes pueden rastrear el progreso de sus envíos en todo
+                        momento. Además, todas las mercancías que transportamos están
+                        cubiertas por una póliza todo riesgo, para brindarles a nuestros
+                        clientes total tranquilidad y confianza.
+                    </p>
+                    <p>En Box Mensajería, nuestros conductores están altamente
+                        capacitados en atención al cliente, lo que significa que sus
+                        clientes siempre recibirán un servicio amable y profesional.
+                        Además, nuestros vehículos están en perfectas condiciones y
+                        sometidos a rigurosos controles de seguridad, para garantizar la
+                        máxima seguridad y eficiencia en la entrega de sus envíos.</p>
 
+                    <a href="./cotizacion.html">reserva ahora</a>
+                </div>
+            </div>
+        </section>
         <div class="whatsapp">
             <a href="https://wa.me/3124788549?text=envianos%20un%20mensaje" target="_blank"><img
-                    src="./img/whatsapp-updated.png" alt="logo"></a>
+                    src="../img/whatsapp-updated.png" alt="logo"></a>
         </div>
-        <section class="formulario1">
-            <div class="formulario__content">
-                <h1 class="formulario__contactanos">OBTEN MAS <span> INFORMACION</span></h1>
-                <div class="formulario__contact__container">
-                    <div class="formulario__contact__form">
-                        <form action="https://formsubmit.co/box.mensajeria.col@gmail.com" method="POST">
-                            <p>
-                                <label>Nombre*</label>
-                                <input type="text" id="nombre" name="Nombre" placeholder="escriba su nombre" required>
-                            </p>
-                            <p>
-                                <label>Email*</label>
-                                <input type="email" id="email" name="Email" placeholder="escriba su email" required>
-                            </p>
-                            <p>
-                                <label>Numero*</label>
-                                <input type="tel" id="numero" name="Numero" placeholder="escriba su numero" required>
-                            </p>
-                            <p>
-                                <label>Empresa</label>
-                                <input type="text" id="empresa" name="empresa"
-                                    placeholder="escriba el nombre de la empresa ">
-                            </p>
-                            <p class="block">
-                                <label>Dejanos un mensaje:*</label>
-                                <textarea name="Mensaje" id="mensaje" cols="30" required></textarea>
-                            </p>
-                            <p class="block">
-                                <button type="submit" id="enviar">
-                                    send
-                                </button>
-                            </p>
-                            <input type="hidden" name="_subject" value="New email siuu!">
-                            <input type="hidden" name="_captcha" value="false">
-                            <!--<input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">-->
-                            <input type="hidden" name="_next" value="https://boxmensajeria.com.co/index.html">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!--<section class="contacto">
             <h2>Contacto <span>Rapido:</span> 3124788549</h2>
         </section>-->
@@ -186,7 +126,7 @@
         <div class="container__footer">
             <div class="box__footer1">
                 <div class="logo">
-                    <img src="./img/logo-PERFECTO.png" alt="">
+                    <img src="../img/logo-PERFECTO.png" alt="">
                 </div>
                 <div class="terms">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit cum cumque velit libero
@@ -205,12 +145,12 @@
                 <a href="tel:+573184843246">3194943246</a>
             </div>
 
-            <div class="box__footer" id="remove">
+            <div class="box__footer">
                 <h2>Compa<span>ñia</span></h2>
-                <a href="./pages/nosotros.html">Acerca de</a>
-                <a href="./pages/trabaja.html">Trabaja en box</a>
-                <a href="./pages/contactanos.html">contactanos</a>
-                <a href="./pages/servicios.html">Servicios</a>
+                <a href="./nosotros.html">Acerca de</a>
+                <a href="./trabaja.html">Trabaja en box</a>
+                <a href="./contactanos.html">contactanos</a>
+                <a href="./servicios.html">Servicios</a>
             </div>
 
             <div class="box__footer">
@@ -221,7 +161,8 @@
                 <a href="https://www.linkedin.com/company/box-mensajer%C3%ADa-s-a-s/" target="_blank"><i
                         class="fab fa-linkedin"></i> Linkedin</a>
                 <a href="https://www.instagram.com/box.mensajeria/" target="_blank"><i
-                        class="fab fa-instagram-square"></i> Instagram</a>
+                        class="fab fa-instagram-square"></i>
+                    Instagram</a>
             </div>
 
         </div>
@@ -231,12 +172,10 @@
             <p>info@boxmensajeria.com.co<b> BOX.MENSAJERIA</b></p>
         </div>
     </footer>
+
     <!--JS BOOTSRTAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="javascript/indexForm.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!--<script src="./js/bootstrap.js"></script>-->
 </body>
-
-</html>
