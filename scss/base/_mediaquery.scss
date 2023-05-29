@@ -262,36 +262,71 @@
 }
 
 //!-------------------INDEX-SERVICIOS------------------------------!//
-@media screen and (max-width:460px) {
+
+
+@media screen and (max-width:405px) {
     .servicios {
         h2 {
-            font-size: 25px;
+            font-size: 28px;
         }
 
         .servicios__contenedor {
             div {
                 width: 280px;
-                height: 422px;
+                height: 350px;
 
-                a {
-                    img {
-                        width: 280px;
-                        height: 210px;
-                    }
-                }
-
-                p {
-                    font-size: 19px;
+                img {
+                    width: 100%;
+                    height: 190px;
                 }
 
                 h3 {
-                    font-size: 15px;
-                    font-weight: 900;
+                    font-size: 17px;
+                }
+
+                p {
+
+                    font-size: 1.1em;
+
                 }
 
                 .servicios__contenedor__reserva {
-                    font-size: 15PX;
-                    font-weight: 600;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:379px) {
+    .servicios {
+        h2 {
+            font-size: 26px;
+        }
+
+        .servicios__contenedor {
+            div {
+                width: 240px;
+                height: 310px;
+
+                img {
+                    width: 100%;
+                    height: 170px;
+                }
+
+                h3 {
+                    font-size: 14px;
+                }
+
+                p {
+
+                    font-size: 0.9em;
+
+                }
+
+                .servicios__contenedor__reserva {
+                    font-size: 10px;
                 }
             }
         }
@@ -300,36 +335,34 @@
 
 
 
-@media screen and (max-width:350px) {
+@media screen and (max-width:325px) {
     .servicios {
         h2 {
-            font-size: 25px;
+            font-size: 23px;
         }
 
         .servicios__contenedor {
             div {
-                width: 250px;
-                height: 400px;
+                width: 210px;
+                height: 260px;
 
-                a {
-                    img {
-                        width: 250px;
-                        height: 190px;
-                    }
-                }
-
-                p {
-                    font-size: 19px;
+                img {
+                    width: 100%;
+                    height: 140px;
                 }
 
                 h3 {
-                    font-size: 15px;
-                    font-weight: 900;
+                    font-size: 12px;
+                }
+
+                p {
+
+                    font-size: 0.8em;
+
                 }
 
                 .servicios__contenedor__reserva {
-                    font-size: 12PX;
-                    font-weight: 600;
+                    font-size: 8px;
                 }
             }
         }
@@ -479,6 +512,8 @@
 @media screen and (max-width:570px) {
     main {
         .quienes__somos {
+            margin-left: 0em;
+
             div {
                 img {
                     width: 330px;
@@ -501,6 +536,9 @@
 @media screen and (max-width:445px) {
     main {
         .quienes__somos {
+
+            margin-right: 1em;
+
             div {
                 img {
                     width: 240px;
@@ -525,253 +563,290 @@
 
 //!--------------------SERVICIOS-------------------------!//
 
-
-/*@media screen and (max-width:1362px) {
-    main {
-        .mensajeria {
-            margin-right: 80px;
-            margin-left: 80px;
-            flex-direction: column;
-
-            .mensajeria__empresarial {
-                img {
-                    margin-bottom: 35px;
-                }
-            }
-        }
-
-        .mensajeria2 {
-            margin-right: 60px;
-            margin-left: 80px;
-            flex-direction: column;
-
-            .mensajeria__alquiler {
-                img {
-                    margin-bottom: 35px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:670px) {
-    main {
-        .mensajeria {
-            .mensajeria__empresarial {
-                img {
-                    height: 450px;
-                    width: 450px;
-                }
-            }
-        }
-
-        .mensajeria2 {
-            .mensajeria__alquiler {
-                img {
-                    height: 450px;
-                    width: 450px;
-                }
-            }
-        }
-
-    }
-}
-
-@media screen and (max-width:634px) {
-    main {
-        .mensajeria {
-            margin-right: 30px;
-            margin-left: 10px;
-
-            .mensajeria__empresarial {
-                img {
-                    display: none;
-                }
-            }
-        }
-
-        .mensajeria2 {
-            margin-right: 10px;
-            margin-left: 30px;
-
-            .mensajeria__alquiler {
-                img {
-                    display: none;
-                }
-            }
-        }
-
-    }
-}
-
-@media screen and (max-width:517px) {
-    main {
-        .mensajeria {
-            .mensajeria__empresarial__texto {
-                h3 {
-                    font-size: 30px;
-                }
-            }
-        }
-
-        .mensajeria2 {
-            .mensajeria__alquiler__texto {
-                h3 {
-                    font-size: 30px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:490px) {
-    main {
-        .mensajeria {
-            .mensajeria__empresarial__texto {
-                h3 {
-                    font-size: 25px;
-                }
-
-                h4 {
-                    font-size: 20px;
-                }
-
-                p {
-                    font-size: 20px;
-                }
-
-                a {
-                    font-size: 20px;
-                }
-            }
-        }
-
-        .mensajeria2 {
-            .mensajeria__alquiler__texto {
-                h3 {
-                    font-size: 25px;
-                }
-
-                h4 {
-                    font-size: 20px;
-                }
-
-                p {
-                    font-size: 20px;
-                }
-
-                a {
-                    font-size: 20px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:415px) {
-    main {
-        .mensajeria {
-            .mensajeria__empresarial__texto {
-                h3 {
-                    font-size: 20px;
-                }
-
-                h4 {
-                    font-size: 15px;
-                }
-
-                p {
-                    font-size: 15px;
-                }
-
-                a {
-                    font-size: 15px;
-                }
-            }
-        }
-
-        .mensajeria2 {
-            .mensajeria__alquiler__texto {
-                h3 {
-                    font-size: 20px;
-                }
-
-                h4 {
-                    font-size: 15px;
-                }
-
-                p {
-                    font-size: 15px;
-                }
-
-                a {
-                    font-size: 15px;
-                }
-            }
-        }
-    }
-}*/
-
-
-/* Media queries for smaller devices */
 @media screen and (max-width: 1340px) {
     main {
         .mensajeria {
             flex-direction: column;
 
-            /*h3 {
-                text-align: center;
-            }
-
-            h4 {
-                text-align: center;
-            }*/
-
             img {
                 margin-bottom: 20px;
+            }
+
+            div {
+                .mensajeria__empresarial__texto {
+                    margin-left: 1em;
+                    margin-right: 0px;
+                }
             }
         }
 
         .mensajeria2 {
             flex-direction: column;
 
-            /*h3 {
-                text-align: center;
-            }
-
-            h4 {
-                text-align: center;
-            }*/
 
             img {
                 margin-bottom: 20px;
+                margin-left: 1.5em;
+            }
+
+            div {
+                .mensajeria2__alquiler__texto {
+                    margin-left: 1em;
+                    margin-right: 0px;
+                }
             }
         }
 
         .Personas {
             flex-direction: column;
 
-            /*h3 {
-                text-align: center;
-            }
-
-            h4 {
-                text-align: center;
-            }*/
-
             img {
                 margin-bottom: 20px;
+                margin-left: 1.5em;
+            }
+
+            div {
+                .Personas__rent__texto {
+                    margin-left: 1em;
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+
+///////////////////////////////////////////////////////
+
+
+@media screen and (max-width: 650px) {
+    main {
+        .mensajeria {
+            div {
+                .mensajeria__empresarial__texto {
+                    h3 {
+                        font-size: 1.8em;
+                    }
+
+                    a {
+                        padding: 0.5em 1.3em;
+                    }
+                }
+            }
+        }
+
+        .mensajeria2 {
+
+            div {
+                .mensajeria2__alquiler__texto {
+                    h3 {
+                        font-size: 1.8em;
+                    }
+
+                    a {
+                        padding: 0.5em 1.3em;
+                    }
+                }
+            }
+        }
+
+        .Personas {
+
+            div {
+                .Personas__rent {
+                    h3 {
+                        font-size: 1.8em;
+                    }
+
+                    a {
+                        padding: 0.5em 1.3em;
+                    }
+                }
             }
         }
     }
 }
 
 
+/////////////////////////////////////////////////////////
 
 
+@media screen and (max-width: 540px) {
+    main {
+        .mensajeria {
+            &__empresarial {
+                img {
+                    width: 350px;
+                    height: 450px;
+                }
+            }
+
+            div {
+                .mensajeria__empresarial__texto {
+                    margin-left: 0.5em;
+
+                    h3 {
+                        font-size: 1.8em;
+                    }
+
+                    a {
+                        padding: 0.5em 1.3em;
+                    }
+                }
+            }
+        }
+
+        .mensajeria2 {
+            &__alquiler {
+                img {
+                    width: 350px;
+                    height: 450px;
+                }
+            }
+
+            div {
+                .mensajeria2__alquiler__texto {
+                    margin-left: 0.5em;
+
+                    h3 {
+                        font-size: 1.8em;
+                    }
+
+                    a {
+                        padding: 0.5em 1.3em;
+                    }
+                }
+            }
+        }
+
+        .Personas {
+            &__rent {
+                img {
+                    width: 350px;
+                    height: 450px;
+                }
+            }
+
+            div {
+                .Personas__rent__texto {
+                    margin-left: 0.5em;
+
+                    h3 {
+                        font-size: 1.8em;
+                    }
+
+                    a {
+                        padding: 0.5em 1.3em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//////////////////////////////////////////////////////////
 
 
+@media screen and (max-width: 420px) {
+    main {
+        .mensajeria {
+            &__empresarial {
+                img {
+                    width: 200px;
+                    height: 300px;
+                }
+            }
 
+            div {
+                .mensajeria__empresarial__texto {
+                    margin-left: 0.1em;
+
+
+                    h3 {
+                        font-size: 1.1em;
+                    }
+
+                    h4 {
+                        font-size: 0.9em;
+                    }
+
+                    p {
+                        font-size: 0.7em;
+                    }
+
+                    a {
+                        padding: 0.1em 0.8em;
+                        font-size: 0.7em;
+                    }
+                }
+            }
+        }
+
+        .mensajeria2 {
+            &__alquiler {
+                img {
+                    width: 200px;
+                    height: 300px;
+                }
+            }
+
+            div {
+                .mensajeria2__alquiler__texto {
+                    margin-left: 0.1em;
+
+                    h3 {
+                        font-size: 1.1em;
+                    }
+
+                    h4 {
+                        font-size: 0.9em;
+                    }
+
+                    p {
+                        font-size: 0.7em;
+                    }
+
+                    a {
+                        padding: 0.1em 0.8em;
+                        font-size: 0.7em;
+                    }
+                }
+            }
+        }
+
+        .Personas {
+            &__rent {
+                img {
+                    width: 200px;
+                    height: 300px;
+                }
+            }
+
+            div {
+                .Personas__rent__texto {
+                    margin-left: 0.1em;
+
+
+                    h3 {
+                        font-size: 1.1em;
+                    }
+
+                    h4 {
+                        font-size: 0.9em;
+                    }
+
+                    p {
+                        font-size: 0.7em;
+                    }
+
+                    a {
+                        padding: 0.1em 0.8em;
+                        font-size: 0.7em;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -839,7 +914,7 @@
 
 //!------------------Clientes-------------------------!//
 
-@media screen and (max-width:386px) {
+/*@media screen and (max-width:386px) {
     main {
         .clientes {
             h1 {
@@ -850,5 +925,72 @@
                 font-size: 18px;
             }
         }
+    }
+}*/
+
+@media screen and (max-width: 768px) {
+    .clientes {
+        h1 {
+            font-size: 20px;
+        }
+
+        h5 {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .clientes__container {
+            img {
+                width: 150px;
+                height: 150px;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .clientes {
+        h1 {
+            font-size: 25px;
+        }
+
+        h5 {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .clientes__container {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+
+            h2 {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+//!---------------------Trabaja--------------------------------!//
+
+@media (max-width: 400px) {
+    .form__drivers {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .application_form {
+        max-width: 100%;
+        margin: 0 10px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
     }
 }

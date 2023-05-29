@@ -5,10 +5,19 @@ $background-color: rgb(204, 18, 18);
 /* Variables */
 $main-font: 'Quicksand', sans-serif;
 $main-color: aliceblue;
-$secondary-color: rgb(139, 5, 32);
+/*$secondary-color: rgb(139, 5, 32);*/
 $main-padding: 0;
 $main-margin: 41px 95px 41px 120px;
 $main-border-radius: 10px;
+// Define variables for the breakpoints
+$small-screen: 480px;
+$medium-screen: 768px;
+$large-screen: 1024px;
+
+$primary-color: $background-color;
+$secondary-color: #6c757d;
+$bg-color: #f8f9fa;
+
 
 /*$main-font: 'Open Sans', sans-serif;*/
 

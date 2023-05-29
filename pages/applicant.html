@@ -15,7 +15,7 @@
     <!--!FAVICON-->
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <!--!TITLE-->
-    <title>BOX MENSAJERIA </title>
+    <title>BOX MENSAJRIA </title>
     <!--!META DESCRIPTION--->
     <meta name="description"
         content="Somos una compañía de mensajería y logística empresarial. Desde el inicio de nuestras operaciones nos hemos comprometido con dar el mejor servicio posible, siendo muy cuidadosos con la eficiencia y la comunicación clara con los clientes.">
@@ -24,7 +24,7 @@
         content="mensajeria, box mensajeria, mensajeria urbana, entregas,  box, logostica, expreses, urbana mensajeria, caja, carga, envios, envio ">
     <!--!PROTOCOL OPEN GRAPH-->
     <meta property="og:type" content="web site">
-    <meta property="og:title" content="BOX MENSAJERIA">
+    <meta property="og:title" content="BOX MENSAJERIA / mensajeria">
     <meta property="og:description"
         content="Somos una compañía de mensajería y logística empresarial. Desde el inicio de nuestras operaciones nos hemos comprometido con dar el mejor servicio posible, siendo muy cuidadosos con la eficiencia y la comunicación clara con los clientes.">
     <!--!SUBIDA AL SERVIDOR -->
@@ -53,8 +53,10 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">SREVICIOS
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dorpdown__cutomize" href="../pages/mensajeria.html">MENSAJERIA EMPRESARIAL</a></li>
-                                <li><a class="dorpdown__cutomize" href="../pages/alquiler.html">BOX RENT COORPORATIVO</a>
+                                <li><a class="dorpdown__cutomize" href="../pages/mensajeria.html">MENSAJERIA EMPRESARIAL</a>
+                                </li>
+                                <li><a class="dorpdown__cutomize" href="../pages/alquiler.html">BOX RENT
+                                        COORPORATIVO</a>
                                 </li>
                                 <li><a class="dorpdown__cutomize" href="../pages/personas.html">BOS RENT PERSONAS</a>
                                 </li>
@@ -71,7 +73,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dorpdown__cutomize" href="../pages/clientes.html">CLIENTES</a></li>
-                                <li><a class="dorpdown__cutomize" href="../pages/applicant.html">TRABAJA EN BOX</a></li>
+                                <li><a class="dorpdown__cutomize" href="../pages/trabaja.html">TRABAJA EN BOX</a></li>
                                 <!--<li><a class="dropdown-item" href="#">Something else here</a></li>-->
                             </ul>
                     </ul>
@@ -80,56 +82,71 @@
         </nav>
     </header>
     <main>
+        <!--<div class="container">
+            <div class="image-container">
+                <img src="../img/alquiler.jpg" alt="Your Image">
+            </div>
+            <div class="form-container">
+                <form>
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="NOMBRES Y APPELLIDOS">
+
+                    <label for="telefono"></label>
+                    <input type="tel" id="telefono" name="telefono"placeholder="NUMERO CELULAR">
+
+                    <label for="correo"></label>
+                    <input type="email" id="correo" name="correo" placeholder="EMAIL">
+
+                    <label for="cedula"></label>
+                    <input type="text" id="cedula" name="cedula" placeholder="CEDULA">
+
+                    <label for="cv">ADJUNTE SU HOJA DE VIDA:</label>
+                    <input type="file" id="cv" name="cv">
+                    
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>-->
         <section class="formulario1">
             <div class="formulario__content">
-                <h1 class="formulario__contactanos">RESERVA<span> AHORA</span></h1>
+                <h1 class="formulario__contactanos">TRABAJA EN<span> BOX</span></h1>
                 <div class="formulario__contact__container">
                     <div class="formulario__contact__form">
                         <form action="https://formsubmit.co/box.mensajeria.col@gmail.com" method="POST">
                             <p>
                                 <label>Nombre*</label>
-                                <input type="text" id="nombre" name="Nombre" placeholder="escriba su nombre" required>
+                                <input type="text" id="nombre" name="Nombre" placeholder="Escriba su nombre" required>
                             </p>
                             <p>
                                 <label>Email*</label>
-                                <input type="email" id="email" name="Email" placeholder="escriba su email" required>
+                                <input type="email" id="email" name="Email" placeholder="Escriba su email" required>
                             </p>
                             <p>
-                                <label>Numero*</label>
-                                <input type="tel" id="numero" name="Numero" placeholder="escriba su numero" required>
+                                <label>Número*</label>
+                                <input type="tel" id="numero" name="Numero" placeholder="Escriba su número" required>
                             </p>
                             <p>
-                                <label>Empresa*</label>
-                                <input type="text" id="empresa" name="empresa" placeholder="escriba el nombre de la empresa ">
-                            </p>
-                            <!--<p>
-                                <label>Motocicletas Solicitadas</label>
-                                <input type="text" id="motos" name="motos" >
-                            </p>-->
-                            <!--<p>
-                                <label>Actividad a realizar</label>
-                                <input type="text" id="Actividad" name="actividad" required>
-                            </p>-->
-                            <p class="block">
-                                <label>Actividad a realizar</label>
-                                <input type="text" name="cita">
-                                <!--<textarea name="Mensaje" cols="30"></textarea>-->
+                                <label>Cedula*</label>
+                                <input type="text" id="empresa" name="empresa"
+                                    placeholder="Escriba el nombre de la empresa">
                             </p>
                             <p class="block">
-                                <button type="submit">
-                                    send
+                                <label for="cv">Adjunte su hoja de vida:</label>
+                                <input type="file" id="cv" name="cv">
+                            </p>
+                            <p class="block">
+                                <button type="submit" id="enviar">
+                                    Enviar
                                 </button>
                             </p>
-                            <input type="hidden" name="_subject" value="New email siuu!">
+                            <input type="hidden" name="_subject" value="Nuevo email siuu!">
                             <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_next" value="https://boxmensajeria.com.co/pages/cotizacion.html">
+                            <!--<input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">-->
+                            <input type="hidden" name="_next" value="https://boxmensajeria.com.co/index.html">
                         </form>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="whatsapp">
-            <a href="https://wa.me/3124788549?text=envianos%20un%20mensaje" target="_blank"><img src="../img/whatsapp-updated.png" alt="logo"></a>
         </div>
     </main>
     <footer>
@@ -145,7 +162,7 @@
                 </div>
             </div>
             <div class="box__footer">
-                <h2>Solucion<span>es</span></h2>
+                <h2>Solucio<span>nes</span></h2>
                 <a href="https://play.google.com/store/apps/details?id=com.boxmensajeria.usuario&gl=US"
                     target="_blank">App</a>
                 <a href="https://empresite.eleconomistaamerica.co/BOX-MENSAJERIA-SAS.html"
@@ -156,7 +173,7 @@
             </div>
 
             <div class="box__footer">
-                <h2>Compañ<span>ia</span></h2>
+                <h2>Compa<span>ñia</span></h2>
                 <a href="./nosotros.html">Acerca de</a>
                 <a href="./trabaja.html">Trabaja en box</a>
                 <a href="./contactanos.html">contactanos</a>
@@ -171,7 +188,8 @@
                 <a href="https://www.linkedin.com/company/box-mensajer%C3%ADa-s-a-s/" target="_blank"><i
                         class="fab fa-linkedin"></i> Linkedin</a>
                 <a href="https://www.instagram.com/box.mensajeria/" target="_blank"><i
-                        class="fab fa-instagram-square"></i> Instagram</a>
+                        class="fab fa-instagram-square"></i>
+                    Instagram</a>
             </div>
 
         </div>
@@ -181,12 +199,12 @@
             <p>info@boxmensajeria.com.co<b> BOX.MENSAJERIA</b></p>
         </div>
     </footer>
+
     <!--JS BOOTSRTAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-    <script src="../javascript/indexForm.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <!--<script src="./js/bootstrap.js"></script>-->
 </body>
+
 </html>
